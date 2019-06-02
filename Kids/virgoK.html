@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Virgo child</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/Kids/virgo.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Virgo child ✡</h2>
+                    <p>
+                        hose parents who have a Virgo child are really happy parents. Virgo child usually behave good, they
+                        study well, they pay attention to any kind of information. Since their childhood, Virgo tries to
+                        perform well at all task they are given to. These children can absorb huge volumes of
+                        information. Therefore, if parents try to develop Virgos, they will show exceptional abilities. Virgo child
+                        can often get ill. According to statistics, 90% of such children have problems with the
+                        gastrointestinal tract. Therefore, Virgo child need a balanced menu. If Virgo refuses to eat a particular
+                        product, it is better not to insist.                                              
+                    </p>
+                    <p>Virgo children are patient enough and they do not like to complain (including about pain) to their
+                            parents. That is why parents should try to be very attentive to what is happening with their
+                            children, including emotional state of children. Another weakness of Virgo child is their nervous
+                            system. Their psyche is unstable.Virgo child can be either too nervous or, on the contrary, can fall
+                            into prostration. They also can suffer from insomnia. </p>
+                    <p>Advice for parents: You should Learn how to build trust with Virgo and shouldn’t try to dominate
+                            them. If you try to become a friend to your child, Virgo will be able to tell you more, including about
+                            her psychological state. It is good to introduce Virgos to any kind of art, such as drawing ✏or
+                            music♪♫. Art balances the psyche of little Virgo. Their tendency to a knowledge should be encouraged
+                            by parents. Do not economise money for educational games, books. The more the parents are
+                            engaged in developing of their children, the more successful they are in adult life. </p>
+                    <P> Virgo child are quite shy, they often have low self-esteem, even the most beautiful girls quite often can
+                            consider themselves as ugly ducklings. Therefore, if you notice that the child is shy and
+                            belittles themselves, you should support and inspire your child and tell them that they are
+                            worthy of the best, the most beautiful and intelligent. You must encourage them because 
+                            constantly doubt about their capabilities and attractiveness.</P>
+
+                    <p>Little needs tactile contact very much. If they have not seen affection from their parents, then
+                        they can become emotionally cold in adult life.Even as a child, Virgo is wise and adult person in
+                        their soul, so it is quite simple to find an approach to them. You just need to show love, care,
+                        kindness and gentleness.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

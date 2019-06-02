@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Virgo</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/virgo.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Virgo ✡</h2>
+                    <p>
+                        Virgo is a melancholic person. The sign belongs to the element of earth, and its ruling
+                        planet is Mercury. At the first sight, it can be considered that the Virgo’s most important
+                        concerns are their home and material problems. In fact, this is not like that. Just Virgo’s
+                        observing allows them to note all the imperfections of the surrounding world and correct them as
+                        much as they can. Virgo always looks for knowledge. As a true Mercurian, they just need a
+                        partner, Virgo can not be alone. Therefore, they can be very easy in a relationship, but
+                        periodically taking out the brain.
+                    </p> 
+                       <p>They are very reliable persons. Virgo always thinks and analyzes
+                        something. works a lot, sometimes even too much. If they come to visit their friend, they can
+                        help washing floors, just because Virgin likes cleanliness. </p>                                              
+                    <p>They can decide to make  experiments only after careful research, making a good plan, and checking. They are modest but
+                        know their worth. They have logical attitude towards reality, that is why they can criticise
+                        others reasonably, but without tolerance. They are quite sensitive to criticism, especially if
+                        it is not fully substantiated. They can afford some luxury only at when no one sees. </p>
+                    <P>In a professional sense, they always feel right in their place. Everywhere they work hard. They
+                        have good ability to understand the essence of the matter. They are attentive, diligent,
+                        economical. They are perfect leaders and work a lot as well. Virgo does not like to delegate
+                        work to others, because they are sure that nobody will be able to do it better than Virgo can,
+                        and this can scare people off.</P>
+
+                    <p>Most of them have problems with awareness of their sexuality. The problem is that the Virgo
+                        sees their own shortcomings too clear and very often consider themselves unworthy of the love or
+                        attention of other persons. It is quite common, that Virgo can suffer from an inferiority
+                        complex. Practical advice: Change your mind- praise yourself, love yourself and think less about
+                        annoying trifles.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

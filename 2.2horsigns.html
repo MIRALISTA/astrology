@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astrological signs</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Astrological signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div style="text-align:center">
+
+                           <h2>✡ Astrological signs ✡</h2>
+                    <p>
+                        To find out all about the Astrology Signs, click on the links below. Your Zodiac sign, or star
+                        sign, reflects the position of the sun when you were born. With its strong influence on your personality, character, and emotions, your sign is a powerful tool for
+                        understanding yourself and your relationships.   
+
+                    </p>
+                    <p>Click on the astrological signs below to discover their powerful traits and
+                            secrets.
+                    </p>                                   
+           
+            <!-- The post ends -->
+
+            <hr>
+    <!--break-->
+
+    <!-- The zodiac signs starts-->
+     <!-- Massimo Margagnoni -->
+     
+     <a href="signs/aries.html" ><img class="sign" src="images/aries.jpg"></a>
+     <a href="signs/taurus.html" ><img class="sign"src="images/taurus.jpg"></a>
+     <a href="signs/gemini.html" ><img class="sign"src="images/gemini.jpg"></a>
+     <a href="signs/cancer.html" ><img class="sign" src="images/canc.jpeg"></a>
+     <a href="signs/leo.html" ><img class="sign"src="images/leo.jpg"></a>
+     <a href="signs/virgo.html" ><img class="sign"src="images/virgo.jpg"></a>
+     <a href="signs/libra.html" ><img class="sign" src="images/libra.jpeg"></a>
+     <a href="signs/scorpio.html" ><img class="sign"src="images/scorpio.jpg"></a>
+     <a href="signs/saggit.html" ><img class="sign"src="images/saggit.jpg"></a>
+     <a href="signs/capricorn.html" ><img class="sign" src="images/capr.jpg"></a>
+     <a href="signs/aquarius.html" ><img class="sign"src="images/aqua.jpg"></a>
+     <a href="signs/pisces.html" ><img class="sign"src="images/pis.jpg"></a>
+    </div>
+
+    
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

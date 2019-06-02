@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Palmastrology</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Palmastrology</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+                <a href="4.services.html">Services</a>
+            </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The Moon forecast June 2019 starts -->
+    <div style= "text-align: center">
+
+                <h2>✡ Moon without a course in June 2019 year (for Moscow time) ✡</h2>
+
+                <p> 02.06.2019 between 01:52-14:46
+                </p>
+                <p> 4.06.2019 between 18:43-19:15
+                </p>
+                <p> 6.06.2019 between 17:12-22:14
+                </p>
+                <p> 9.06.2019 between 00:25-00:43
+                </p>
+                <p> 10.06.2019 between 15:00-24:00
+                </p>
+                <p> 11.06.2019 between 00:00-03:27
+                </p>
+                <p> 12.06.2019 between 18:15-24:00
+                </p>
+                <p> 13.06.2019 between 00:00-07:00
+                </p>
+                <p> 14.06.2019 between 22:45-24:00
+                </p>
+                <p> 15.06.2019 between 00:00-12:00
+                </p>
+                <p> 17.06.2019 between 11:30-19:11
+                </p>
+                <p> 19.06.2019 between 14:20-24:00
+                </p>
+                <p> 20.06.2019 between 00:00-04:59
+                </p>
+                <p> 21.06.2019 between 17:02-24:00
+                </p>
+                <p> 22.06.2019 between 00:00-17:00
+                </p>
+                <p> 25.06.2019 between 02:11-05:36
+                </p>
+                <p> 27.06.2019 between 10:53-16:30
+                </p>
+                <p> 28.06.2019 between 21:39-24:00
+                </p>
+            
+</div>
+
+<!-- The Moon forecast June 2019 - -->
+
+    <hr />
+    <!--break-->
+
+    
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

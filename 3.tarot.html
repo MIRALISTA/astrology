@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tarot</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br/>
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+
+    <!-- The 1st post -->
+    <div class="tarot">
+        <img class="tarotimg" src="images/tarot.jpg">
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <span>
+            <h2>✡ Why Tarot Reading? ✡</h2>
+            <p>Tarot readings are a powerful form of divination that use an ancient deck of cards to help you find
+                answers
+                to your most important questions about love, relationships, your career, finances and more. Psychics and
+                fortune tellers have used Tarot cards for hundreds of years, and Trusted Tarot will give you an accurate
+                reading that's personalized based the cards you choose and the order you pick them. Every card has a
+                different meaning depending on its position, so you will get a unique and detailed perspective on your
+                current situation.</p>
+
+            <h2>✡ History of Tarot Reading ✡</h2>
+            <p>The history of Tarot cards reading is as mystic as the concept of Tarot reading itself! Although there is
+                no exact origin of Tarot history, there has been evidence that it was primitively known as a card game
+                having a French title Le Tarots and was predominantly of Italian origin. However, it may well be noted that this
+                game  is still played in some European countries but bears no resemblance to the divinity personified concept
+                of Tarot reading. So Tarot cards can well be considered as a tool for effective divination solutions that have been
+                consistently used since times immemorial.</p>
+            <p> The importance of tarot symbolism was attached by the first psychologist, Carl Jung. He may have regarded
+                the tarot cards by representing archetypes: situations embedded in the subconscious of all human being or
+                fundamental types of person. The archetypes theory is used in several psychological treatments.</p>
+            
+            <h2>✡ Love Tarot Readings ✡</h2>
+            <p>This kind of Tarot Readings are probably the most popular. You meet somebody and
+                want to find out if their intentions are honorable or you are in a relationship that is getting a bit sour
+                and you want to find out your chances of saving it. If you have doubts about your current love relationship or want to find out if the prospect you have in mind is a good match — love tarot reading can provide some
+                meaningful answers for you.</p>
+
+            <p>Remember that no matter what the reading reveals — you are able to influence the outcome
+            of any situations. Tarot readings will show you the current state within the energetic frames of people
+            involved.</p>
+              </div>
+              </div>
+    <!-- The 1st post finishs-->
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

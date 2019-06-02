@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Taurus child</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/Kids/taurus.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Taurus child ✡</h2>
+                    <p> Taurus child is a benevolent, but very stubborn child. Such a child persistently learns the
+                        world. Unlike other children, he/she can spend hours studying letters, engaging in figures. A
+                        Taurus child is very diligent, he/she will not give up the matter until he completes it. Parents
+                        are always touched and surprised. But the euphoria of the parents passes when the child begins
+                        to show persistence not only about the letters and figures, deciding to try something else. Such
+                        a child with the same persistence - will achieve it, and it can be anything not always good as
+                        well. And then the parents can face difficulties.</p>                 
+                                               
+                    <p>Advice to parents: remember that you will not achieve anything, if you use hysterics and screaming! The more aggression parents will show, the
+                            more confrontation they will receive from such children. The fact is that along with
+                            stubbornness, a sense of justice was born. So with this child only calm dialogue is possible
+                            with the explanation to child why is not allowed to do certain things.</p>
+                    <p>Taurus cannot get used to something new quite easily. So kindergarten or school can be very stressful for such a child.
+                            It is good if the Taurus starts going to school/kindergarten along with the children with whom
+                            he is already familiar. Then such a child gets used to a new environment easily.</P>
+                    <p>Taurus children have another feature - they are very slow. But If their parents will rush and push
+                            them, It will make them nervous and provoke them to make even more mistakes. It is better to
+                            plan life in such way that the kid can do everything in his/her own pace. Respect them from the
+                            very childhood and let them be themselves. Then, in adulthood, you will have a good, warm,
+                            sincere relationship with your still small Taurus.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

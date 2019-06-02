@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Saggitarius</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/saggit.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Saggitarius ✡</h2>
+                  <p>Sagittarius is the most optimistic and the most generous horoscope sign. It is named in honor
+                    of the Greek myth of the centaur Chiron. Centaur (half-human-half-breed) was the 1st, strong and
+                    wise teacher of all the famous heroes of Greece: Hercules, Achilles, Jason, Orpheus, Aesculapius
+                    and many others. He told his students about the structure of the world, the origin of all
+                    things, about music and herbs, as well as the benefits of a healthy lifestyle. Like the
+                    prototype of the sign centaur Chiron, Sagittarius has an irrepressible thirst to share knowledge and bring
+                    everyone into a better future (with their, of course, position of a wise guru). An expansion
+                    in all senses is very important for them. Their life does not make sense without adventure and
+                    adventurism.</p>
+                <p>Sagittarius is a fighter for social justice, personal and spiritual freedom striving for a nice
+                    future. They are often misunderstood, accused of idealism and utopianism. However, in fact, it
+                    is isn’t like that. Of course, there can be failures in their lives, but it does not discourage
+                    them, because they clearly know that after the dark strip of life a light strip come. There are
+                    mostly optimists and people with a good sense of humor among Sagittarius. Sagittarius are great travelers and
+                    explorers. They are attracted by new countries, new people and new experiences. Only the
+                    problem is that all of them are directed somewhere in far beyond the horizons, and can not see
+                    what is close and in front of their nose, because they don’t pay attention to the little things.
+                    Therefore, close Sagittarius can often suffer from a lack of attention. Sagittarius are not the best psychologists,
+                    because they rarely get stuck on problems. It is rarely possible you can talk heart to heart
+                    with them. However, you can suddenly go with them anywhere in the world one day. </p>
+                <P> Sagittariuses are teachers, thinkers, and mentors. Despite the cheerful personality, introverts and
+                    phlegmatics are still more common among the Sagittarius. Sagittarius are divided into 2 types: a secular with an
+                    independent mindset, extravagant, original, well-educated with persistent ideas. Among these are
+                    many journalists. She loves art, books, nature, animals.</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

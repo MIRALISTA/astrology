@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cancer</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/canc.jpeg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Cancer ✡</h2>
+                    <p>
+                        For the people of Cancer there are 2 worlds - their own and other people’s. It is difficult to
+                        understand what is on their mind and soul. Sometimes they are quite closed. But at the same time
+                        they are amazingly disciplined and serious in everyday matters. Despite the seeming softness  and sensitiveness, cancers are quite powerful people. They like to keep everything under their
+                        control. In usual life they may have a lot of doubts, but during periods of crisis they are able
+                        to fight to protect their friends who were hurt. So they can show themselves as strong people in
+                        extreme situations. 
+                     </p>
+                    <p>Cancer knows how to communicate with different people. Any abrupt situation
+                        amongst their beloved ones is very traumatic for Cancers. Cancer is afraid of freedom. They love being
+                        dependent on other people. It's quite difficult to get close, make friends with a typical
+                        Cancer, because they often are closed and it is hard to gain their trust. ✔ Cancers are not one
+                        of those who immediately become friends just after meeting people. All friends are time-tested.
+                        Therefore they usually have not many friends. But if Cancers let someone come into their life,
+                        they will take care of this person for the rest of their life.</p>
+                        <P> Cancers often have an anxious psyche, they are always emotional and can passionately empathize
+                            with other people's troubles. Also cancers have a well-developed intuition</P>
+                    <P> Cancer woman is more emotional, it is more difficult for her to control the emotions. It is
+                        important for her to see the love of people that she loves. Representatives of this sign of the
+                        zodiac put family happiness at the forefront. They become excellent wives and mothers, who are
+                        sensitive and loving.</P>
+
+                    <p>Cancer man is ready to work hard. He knows how to set goals and achieve them with minimal energy. It is important for him to have a comfortable environment,
+                        because his mood changes rapidly depending on the behavior and words from colleagues and loved
+                        ones.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astrological signs</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Astrological signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div style="text-align:center">
+
+        <h2>✡ Kids Astrology ✡</h2>
+        <p>
+            Raising children is a big job, no matter what your kid’s zodiac sign. It’s hard to know if you’re doing the best that you can for your kids as a parent. Astrology can help you make sense of
+            the process and understand more about your baby, child and teen. We’ve got tips on how to bring out your child’s best traits and happiness, tailored to the personality of
+            each zodiac sign.
+        </p>
+        <p>Find your child's zodiac below and click on the image to discover more about their personality and
+            get useful advice for raising your children.
+        </p>
+
+        <!-- The post ends -->
+
+        <hr>
+        <!--break-->
+
+        <!-- The zodiac signs starts-->
+        <!-- Massimo Margagnoni -->
+
+        <a href="kids/ariesK.html"><img class="sign" src="images/kids/aries.jpg"></a>
+        <a href="kids/taurusK.html"><img class="sign" src="images/kids/taurus.jpg"></a>
+        <a href="kids/geminiK.html"><img class="sign" src="images/kids/gemini.jpg"></a>
+        <a href="kids/cancerK.html"><img class="sign" src="images/kids/canc.jpg"></a>
+        <a href="kids/leoK.html"><img class="sign" src="images/kids/leo.jpg"></a>
+        <a href="kids/virgoK.html"><img class="sign" src="images/kids/virgo.jpg"></a>
+        <a href="kids/libraK.html"><img class="sign" src="images/Kids/libra.jpg"></a>
+        <a href="kids/scorpioK.html"><img class="sign" src="images/kids/scorpio.jpg"></a>
+        <a href="kids/saggitK.html"><img class="sign" src="images/kids/saggit.jpg"></a>
+        <a href="kids/capricornK.html"><img class="sign" src="images/kids/capr.jpg"></a>
+        <a href="kids/aquariusK.html"><img class="sign" src="images/kids/aqua.jpg"></a>
+        <a href="kids/piscesK.html"><img class="sign" src="images/kids/pis.jpg"></a>
+    </div>
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

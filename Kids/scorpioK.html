@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scorpio child</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/Kids/scorpio.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Scorpio child ✡</h2>
+                    <p>
+                        Scorpio is one of the most viable, powerful signs. A sense of independence can be very strong even for a
+                        little Scorpio. Sophisticated parents can raise honest, open, sincere Scorpio who is a defender of the weak,
+                        a wonderful friend and comrade; a real warrior who can overcome any difficulties. On the other
+                        hand; parents, who cannot find an approach to their children, can raise Scorpio who are cruel, selfish
+                        and avenger. Therefore, parents have a great responsibility in the education of such.                                                              
+                    </p>
+                    <p>The Scorpio child have qualities of a fighter from birth. The first people with whom the child
+                        begins to fight are his/her parents. Quite often, it is difficult to agree with Scorpio and it seems
+                        that Scorpio will oppose the parent for any reason. Parents for such child are the first object for
+                        the training of fighting qualities which Scorpio considers very important for themselves, without
+                        realizing it. Therefore, Scorpio children are in constant confrontation with their parents. The
+                        parents, in this case, can feel a strong moral overload when they raise such a child.</p>
+                    <p>Scorpios are often aggressive, especially boys. Therefore, the advice to parents- not even a moment of
+                        aggression should be unnoticed. For example, it should not be like that: one day Scorpio was punished
+                        for aggressive behavior, and the other day it was left unnoticed. If a child offends a friend
+                        and behaves aggressively with other children, it is necessary to explain strictly that this
+                        cannot be done. As a method to solve this problem you need to deprive such a child of any
+                        privileges (prohibit watching cartoons, restricting sweets and etc.). And this should enter
+                        the system. The child should be taught that aggression and force should be used only in extreme
+                        cases. In contrast to the aggression of the little Scorpio, parents should put their love and a good
+                        attitude toward him. Parents should show by their own experience of how to love. </p>
+                    <p>Many Scorpios being very suspicious and distrustful, tend to avoid groups. So from early childhood, attach Scorpio to
+                        team games. The earlier they begin to interact with different children, the easier it will be
+                        for them to adapt to the groups in adult life.</p>
+                    <p>Small Scorpio has a feature: if Scorpio wished something, they will achieve it at any cost. It is
+                        impossible to change a Scorpio’s mind. Therefore, the advice to parents: from childhood the Scorpio child
+                        should have a hobby. Pay attention to what they like. The child should be not forced to do as
+                        their parents want, but it is a good idea to send a child in the right direction when it is
+                        possible. 
+                    </p>
+                    <p>Relationships in the family becomes a model for the little Scorpio, and an example of
+                        his future relationships. Therefore, never have an argument in front of such child. If there is
+                        a quarrel, sort things out when the child does not see it.
+                        Show Scorpio your maximum love, patience and direct it imperceptibly in the right direction and then
+                        in adult life, it will be an honest, noble, fair.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

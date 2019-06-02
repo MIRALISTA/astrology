@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astrology and Palmistry</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e){
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e){
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="title">Palmastrology</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">  <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+                <a href="4.services.html">Services</a>
+            </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">           <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+
+    <!-- The 1st post -->
+    <div class="firstpost">
+        <img class="firstimg" src="images/clock.jpg">
+        <span>
+            <h2>✡ Astrology ✡</h2>
+            From a mathematical point of view, astrology is the exact science which means that the actual success of
+            reading a horoscope card completely depends on the correct calculation. For more accurate horoscope you need
+            to know your place, exact date and time of birth, preferably the exact minute (that can be quite difficult
+            sometimes for any reasons). Palmistry in this regard, has a number of advantages. A palmist doesn`t need to
+            know the exact time of birth, because a palm built by nature through the lines and signs on the hand in this
+            case is like a Natal Chart for astrology . The condition of hills, lines on your hands shows the character,
+            opportunities and events in a person's life.
+            For more reliable forecast we combine palmistry and astrology, which gives us the opportunity to consider in
+            more detail of the fate of a man.
+    </div>
+    <!-- The 1st post finishs-->
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

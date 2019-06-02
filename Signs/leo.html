@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leo</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/leo.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Leo ✡</h2>
+                    <p>
+                        What is the the first image comes to your mind when you hear the word “LEO”? That's right, the
+                        king or a big cat. Leo belongs to the element of Fire. A sign that represents the will and
+                        taste of life. Leo is able to wait, patient, has a sense of self-esteem. The most important
+                        feature is determination. Leo is the sunny sign of actors because of The Sun which is the ruling
+                        planet. It leads them having a strong desire to show themselves.
+                    </p>
+                    <p>Despite their autonomy of
+                        personality, Leo can not imagine themselves without friends or communication. Leo suffers very
+                        much
+                        when they are not noticed, because the attention to them is very important. They need the
+                        adoration coming from their surroundings, that is why they usually have a lot of friends. It is
+                        important for Leo that you mark something unusual in them, which other people do not have!
+                        Moreover, they will constantly talk you about it and show it. The only things that will forever
+                        push the Leo away from you are pettiness and hypocrisy. Leo will
+                        never understand how it is possible to do something behind his back. Therefore they keeps away
+                        from such people. </p>
+                    <p>There are 2 types of Leo evolutions: the Lower and the Higher. The Higher is
+                        warmth, kindness and generosity. The Lower: Napoleon's complex and narcissism (selfies were
+                        invented by Leo ). The task of each Leo is to suppress bad qualities of the Sun, for example,
+                        vanity. If you see a man who lists all his regalia and awards every day, you have met the Lower
+                        Leo. There are a lot of Leos among celebrities⛤. The High Leo does not brag and does not talk
+                        about the achievements. Such kind of people need someone nearby who would be led by them or some
+                        structure, a system that could be changed by them. When there is something need to be organized,
+                        enhanced or there is a situation that must be mobilized and rationalized, Leo becomes very
+                        powerful.</p>
+                    <p> Leo since the childhood is very independent and organized and they do not need to be controlled.
+                        Children love Leos, because it can be explained quite simply. First, Leo attitude to a child is
+                        the same it is to an adult. They are spectators who need Leo's attention. Thus Leo will
+                        definitely pay attention and get
+                        pleasure from it! And children can feel when adults are treating them well! Secondly, Leo can
+                        become very inventive and sincere when they are playing with children! They do not get tired,
+                        but rather very proud that the children appreciate their ideas.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gemini</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/gemini.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Gemini ✡</h2>
+                    <p>
+                        The ruling planet for the Gemini sign is Mercury. In Roman mythology, Mercury (or Hermes)
+                        personifies the god of trade, profit and travel and also thieves. They always have inner
+                        requirement to do any activity. They constantly get new ideas, plans, always need to go
+                        somewhere, call somewhere, talk with someone about their plans - otherwise they are bored and
+                        may become depressed.In communication they are free and easy. They often change their minds.
+                        What they say and think today may not match tomorrow. They think that life is an adventure and
+                        they can get calmer only closer to 50 y.o.              
+                   </p>
+                    <p> The element of Air for Gemini influences on their irresistible desire to communicate with and
+                        connect to other people. When they feel the lack of information, they begin to get bored, look
+                        for a new source of information until they find it.
+                        So the communicability of Gemini is their main feature. No other sign can communicate better
+                        than Gemini. Gemini is called a "mirror" of the Zodiac, because they can reflect any person in
+                        communication, that's why everyone likes to communicate with them. But Gemini is always behind
+                        the scenes. It's hard to understand what's on their mind. In communication they are the center
+                        and soul of the any group of friends.</p>
+                    <p> A typical Gemini is an omnipresent person. Catching Gemini on something is extremely difficult,
+                    they are able to get out of any situation. They are family people, because the force is their
+                    family. From the point of view of astrology, the best husbands are Gemini and Virgo.</P>
+
+                    <p>Gemini usually has very skillful and agile hands (even the symbol is two sticks). The ruling
+                        planet Mercury is responsible for this part of the body. That is why amongst them there are so
+                        many make-up artists, designers and of course, leading and journalists are gemini.
+                        If we talk about countries under the sign of Gemini, then this is the USA. There are no more
+                        mobile, more sociable, friendly and easy people in the world than Americans.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

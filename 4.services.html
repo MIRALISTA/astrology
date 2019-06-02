@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sevices</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="images/servimg.jpeg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ How can we help? ✡</h2>
+                    <p>
+
+                        Would you like to understand yourself better, find out more about your individual strengths and
+                        weaknesses, and suggest constructive ways for using your own particular qualities? Do you want
+                        to understand personality of your partner better or find out what kind of person
+                        fits you more? Do you want to trust people more whom you have to interact with? Or maybe you are
+                        planning to open a new business with a partner who you have doubts about? We can help
+                        you to learn more about yourself and personal features of different people and reveal their
+                        strengths and
+                        weaknesses. We know how life changing a good astrological, palm and Tarot reading can be and
+                        help you to thrive in your life!
+
+                    </p>
+                    <p>We offer our services online and we would love to work with you!
+                        If you want to work with experienced professionals you have come to the right place.
+                     </p>
+                    <h2>✡ How to make an order? ✡</h2>
+
+                    <p>
+                        To make your order and ask any questions or leave your feedback, please, just contact us pressing the "Contact
+                        us" button in the right upper corner of the page.
+                        ️For astrological services you need send your personal details which include the following
+                        information: your full name, the exact date and time of your birth and place of your birth.
+                        For other services- just contact us and we will guide you about further actions.
+                   </p>
+
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+    <hr />
+    <!--break-->
+
+    <!-- The price-list starts-->
+    <div>
+
+        <h2>✡ Our services ✡</h2>
+        <table style="width:99%;  margin: auto">
+            <tr>
+                <th class="service">Astrology and Palmistry</th>
+            </tr>
+        </table>
+        <br />
+        <!--break-->
+        <table style="width:99%;  margin: auto">
+            <tr>
+                <th class="price">Professional Natal Report 25$</th>
+                <td>Your birth chart is a map of the stars' alignments at the exact moment you were born, which reveals
+                    your areas of greatest potential and your unique personality characteristics. Find out how the
+                    planets' positions at your birth influence your entire life, from your relationships to your
+                    finances and much more</td>
+
+            </tr>
+            <tr>
+                <th class="price">Career Report 15$</th>
+                <td>The insight this detailed astrological report and Natal Chart provides can help you take control of
+                    your career and reach your goals. If you wonder if you're in the right job, making enough money, and
+                    maintaining a good work/life balance, this report is for you! Your Career Report can give you that
+                    ever-so-important competitive edge.</td>
+            </tr>
+            <tr>
+                <th class="price">Relationship (Love) Compatibility Report 25$</th>
+                <td>Check out the love potential between you and your partner.This report casts a composite chart (a
+                    single horoscope derived from the midpoints between the
+                    horoscopes of two individuals) and uses this chart to give a meaty analysis of the relationship.
+                    The complete array of astrological placements and aspects wil help you
+                    fully understand that entity that is the two of you.</td>
+            </tr>
+            <tr>
+                <th class="price"> Answer a question 15$</th>
+                <td>Ask any question that you have in your mind & get an accurate answer from our expert.</td>
+            </tr>
+            <tr>
+                <th class="price"> 2019 personal Report 20$</th>
+                <td>This astrological reports is all about throwing a priceless insight into diverse areas
+                    of your life. It presents accurate and personalised predictions on how you are going to perform in
+                    career,business, finance, love life and so on. The reports will help you solve your
+                    problems and unlock your hidden potencial and blossom into your best self.</td>
+            </tr>
+        </table>
+        <br />
+        <table style="width:99%;  margin: auto">
+            <tr>
+                <th class="service">Tarot</th>
+            </tr>
+        </table>
+        <br />
+
+        <table style="width:99%;  margin: auto">
+            <tr>
+                <th class="price"> 2019 Tarot reading 25$</th>
+                <td>Live 2019 to the fullest! Don’t waste a minute of it with your personalized 13-card tarot reading,
+                    giving you month-by-month strategies to make every moment magical. With the guidance from this
+                    reading, 2019 will be a year to remember.</td>
+            </tr>
+            <tr>
+                <th class="price"> Love Tarot Reading 25$</th>
+                <td>
+                    Love Tarot reading can give you the foresight to navigate the romantic ups and downs of your
+                    life. Get deep insight and sound advice for your romantic situation. Let the cards predict the
+                    future of your love relationship, show you how can adapt and grow together, and make the best out of
+                    it! This reading helps you to make wise choices in your love relationship.
+
+                </td>
+            </tr>
+            <tr>
+                <th class="price"> YES/NO Tarot Reading 10$</th>
+                <td>
+                    Yes/No Tarot reading was designed to help you make a quick choice when you are standing
+                    at a crossroads and can't decide what to do. This powerful reading is like a guidance counselor and
+                    oracle all in one. You'll get a straight and honest answer to help you make the best decisions.
+                </td>
+            </tr>
+            <tr>
+                <th class="price">Answer a question Tarot 15$</th>
+                <td>
+                    Tarot cards provide true answers for many questions in your life. The cards can help you with your
+                    decisions in difficult
+                    situations and self-discovery.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- The pricelist finishs-->
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

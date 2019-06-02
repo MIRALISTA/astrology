@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Libra child</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/libra.jpeg">
+            </div>
+            <div>
+                <span>
+                        <h2>✡ Libra ✡</h2>
+                        <p>
+                            The main features of Librasign are the love of justice and establishment of equilibrium. They
+                            are the main negotiators and diplomats of the Zodiac. They are perfectly able to control
+                            themselves.
+                        </p>
+                        <p> It is considered wrongly that Libras do not have their own opinion. In fact, they can be very
+                            fundamental.Libra as their own understanding of things, rules and point of view. They are able
+                            to compromise, but only in those issues that are not principle for them. Libra can set their
+                            point of
+                            view tactfully, but never not by swearing. That's why they're diplomats.</p>
+                        <p>usually have nice manners, sense of taste and erudition. They are extremely selective in
+                            communication. For example, they will not talk to anybody, but at the same time they are very
+                            focused on partnership and friends. For them only the opinions of their friends are important.
+                            They don’t care about what others say. </p>
+                        <p> Libra can get sick if they don’t get noticed by others.There is no more demanding women in
+                            relationship than Libra. She needs attention, kindness and many others things. However, she is
+                            able to not paying attention to imperfections of her partner and do not say anything about it,
+                            but silence has its limits. And if nothing changes, she will explode. It is impossible to find a
+                            better partner than Libra. This is the most relationship-oriented horoscope sign which
+                            symbolizes
+                            the 7th house of horoscope (the house of partnership and marriage).
+                            They are unique for their elusive charm of aristocracy and endurance.
+                        </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Palmastrology</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Palmastrology</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+                <a href="4.services.html">Services</a>
+            </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The newest post starts -->
+    <div>
+        
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div>
+                    <img class="moonimg" src="images/moon2.jpg"/>
+                </div>
+                <div>
+                    <span>
+                        <h2>✡ Moon without a course ✡</h2>
+                        <p>
+                            A moon without a course, a single moon or a moon in free care is a concept of practical
+                            astrology. The fastest celestial body on the earth's horizon, the Moon sometimes finds
+                            itself in such parts of its own orbit, which, although they pass inside certain zodiacal
+                            houses, do not have any contact with any of the planets in the solar system. The state of
+                            the "empty" Moon lasts for several hours sometimes, and sometimes the whole day, bringing
+                            confusion to the destinies of people and entire states.
+                        </p>
+                        <p>
+                            ️The fact is that the Moon without a course retains and carries with it a situation related
+                            to the past aspect, it does not correspond to the current situation. After all, one
+                            favorable moment has already left, and the other has not yet come. Under the influence of
+                            the "empty" moon, a person is forced to commit acts untimely, more suitable for the time
+                            already gone.
+
+                        </p>
+                        
+                        <p>Working with information, you can see that during this period we often get false messages.
+                            Either this information in the future does not come in handy. Suggestions that seem so
+                            tempting, with time, are not necessary, or contain deception. A "beautiful" idea - in fact,
+                            is trivial or meaningless. During the period of the idle moon, there are frequent delays in
+                            meetings, on trains and planes, confusion and confusion arise with documents, tickets. It is
+                            not necessary at this time to start important business, marry, buy houses and apartments,
+                            file documents somewhere (if you do not need them to get lost or the examination is braked).
+                            Be attentive to any calculations.
+                            </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+        <!-- The newest post ends -->
+
+        <hr />
+        <!--break-->
+
+        <!-- The Moon forecast starts-->
+        <div class="oldpost" style="  margin: 5px 5px;
+        padding: 10 20px;">
+             <h2>✡ Moon without a course by months for 2019 ✡</h2>                          
+        </div>  
+
+        <div class="moonforecast" style="display: flex; flex-direction: row; justify-content: center;">
+             <div class="month"> <a href="moonmay.html">May</a> </div>
+             <div class="month"> <a href="moonjune.html">June</a></div>
+        </div>
+    
+      <!-- TThe Moon forecast finishs-->
+    <hr>
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

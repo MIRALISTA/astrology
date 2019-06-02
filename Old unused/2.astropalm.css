@@ -1,0 +1,109 @@
+#title
+{
+    font-size: 52px;
+    color:#e8e6ae;
+    background: url(https://images.pexels.com/photos/544268/pexels-photo-544268.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+body
+{
+    background: url(https://images.pexels.com/photos/1558732/pexels-photo-1558732.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Oswald;
+}
+
+
+ /* Menu panel stiling start*/
+.menu
+{
+    text-align: center;
+    color:#e8e6ae;
+    font-size: 35px;
+    margin: 5px 5px;
+    padding: 10 20px;
+    list-style-type: none;
+    cursor: pointer;
+   
+    
+  
+}
+
+li { 
+    
+    display: inline;
+    border-left: 1px solid #e5e0a7;
+    padding: 10px;
+    
+
+}
+
+li:hover {
+    background-color: gray;
+    color: #e5e0a7;
+}
+
+
+a {
+    text-decoration: none; /* Changing color of links */
+    color: #e8e6ae;
+}
+
+
+
+.home {
+    clear: left; 
+}
+
+.contact {
+    border-right: 1px solid#e5e0a7;
+    }
+    
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #e5e0a7;
+    color:#e5e0a7;
+    text-align: center;
+    margin: 50px 0 5px 0;
+}
+
+/* Menu panel stiling finish*/
+
+
+/*1st blog styling starts*/
+.firstimg {
+    float: left;
+    width: 30%;
+}
+
+span {
+    float: left;
+    max-width: 800px;
+    margin: 40px;
+    padding: 30px;
+    text-align: left; 
+    border: 1px solid  #e5e0a7;
+ }
+     
+ 
+   h2 {
+       text-align: center;
+   }  
+ 
+   
+ /*Blog styling finish*/
+ 
+
+/*Footer styling starts*/
+.footer
+{
+    clear:left;
+}
+/*Footer styling finish*/

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aquarius</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services" style="border-right:1px solid #e0dfba;">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li style=" border: none;">
+            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <img class="icon" src="../instagram.png" />
+            </a>
+            <span style="font-size: 15px;">Follow us</span>
+            </figure>
+        </li>
+        <li style=" border: none;">
+            <figure style="display: inline-block;  padding: 0; margin:0;">
+                <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                    <img class="icon" src="../contacts.png" />
+                </a>
+                <span style="font-size: 15px;">Contact us</span>
+            </figure>
+        </li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/aqua.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Aquarius ✡</h2>
+                    <p>
+                        She symbol of Aquarius is a man holding 2 jars of living and dead water. Water is sensitivity
+                        and mysticism. Another symbol of Aquariusis a woman carrying a jug. It is impossible to exist
+                        without water, and this sign represents the inexhaustible source of life. Probably, the main
+                        idea of the
+                        mission of Aquarius is to bring a fresh stream in our life.</p>
+                    <p>The air is the element of Aquarius, which determines a significant mental activity. Aquarius are
+                        mostly able to learn easily. They usually are smart and love ancient history, philosophy, mysticism and
+                        astrology. Aquarius highly support tolerance and complete freedom. They can be very vinegarish
+                        when express their opinion. Aquarius have absolute, impenetrable confidence in their own right, it is
+                        almost impossible to change their mind. Despite the fact that Aquarius are very sociable, they are not
+                        flexible </p>
+                    <P> Aquarius sign unusually combines the patience, and conservatism of Saturn and the innovative spirit,
+                        futurism and adventurism of Uranus. Uranus is a planet of space, science, aviation and technical
+                        revolutions. So Aquarius often work in these fields.
+                        Aquarius are good at shocking people and making experiments. They run far ahead of their time
+                        shocking others. Aquarius are heralds of the future.They are amazing forecasters and always
+                        generate
+                        new ideas.</p>
+                    <p> It is important for Aquariusto have a company of like-minded people and friends. They are able to unite
+                        others to transfer their ideas into reality. You should never push Aquarius telling them: “you must”. If you say this to Aquarius, they are most likely
+                        run away from you. The word “must” causes hysteria for Aquarius. The principle of voluntariness is
+                        very important for them. Aquarius can seem crazy, unpredictable, incomprehensible to many people, but you definitely won't be bored with them. 
+                        </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gemini child</title>
+    <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script>
+        function showMenu(e) {
+            var bounds = e.getBoundingClientRect();
+            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
+            document.getElementById('sub-menu').style.visibility = "visible";
+        }
+        function hideMenu(e) {
+            document.getElementById('sub-menu').style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="title">Astroclub</div>
+    <!--Menu start-->
+    <ul class="menu">
+        <li class="blog">
+            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        </li>
+        <!--   mouse over starts (open and hide the sub menu) -->
+        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <!--JAVA SCRIPT-->
+            <a href="astropalm.html">Astrology and Palmistry</a>
+        </li>
+        <li class="tarot">
+            <a href="3.tarot.html">Tarot</a>
+        </li>
+        <li class="services">
+            <a href="4.services.html">Services</a>
+        </li>
+        <li class="contact">Contact us</li>
+    </ul>
+    <!-- This is the sub menu. It will be dynamic -->
+    <div style="position: absolute; visibility: hidden;" id="sub-menu">
+        <!--JAVA SCRIPT-->
+        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
+        <a href="2.2horsigns.html">Horoscope signs</a><br />
+        <a href="http://mail.ru">Kids horoscope</a><br />
+        <a href="moon.html">Moon without a course</a><br />
+    </div>
+    <!--Menu finish-->
+    <hr>
+    <!-- The post starts -->
+    <div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div>
+                <img class="oldimg" src="../images/Kids/gemini.jpg" />
+            </div>
+            <div>
+                <span>
+                    <h2>✡ Gemini child ✡</h2>
+                    <p>
+                        Gemini children are very active and restless, they can not be left for a long time in one place
+                        alone. They need an eye-to-eye care, because their inquisitive mind wants to explore the world
+                        and is constantly looking for something new and interesting. They tend to any knowledge that
+                        is available to them, grab 10 matters at the same time. But it is difficult to concentrate on
+                        one thing. Therefore, parents should tactfully in the form of a game to force the child to
+                        finish what they started, and then move on to another. It is important to develop perseverance .
+                        This system will break the frivolous nature of the little Gemini and lead him to success in
+                        adulthood.                              
+                    </p>
+                    <p> Gemini children are very psyched and have an imagination that works very well. Therefore it is
+                            better not to scare these children with some mythical creatures or leave alone in a dark room
+                            for punishment. Otherwise in adult life this can turn into a phobia.</p>
+                    <p> Parents constantly need to play educational games with children, read scientific and
+                            educational literature and teach foreign languages. Try to discourage them from playing computer
+                            games, especially before bedtime, because the little Gemini children are very delicate and
+                            computer games may have bad influence on them.</p>
+
+                    <p>Also these children are well distinguished when they are told the truth or lied to even in
+                            their very young age. Therefore, it is necessary to build a trusting relationship. Talk to your
+                            little baby as an adult using simple and accessible language. Love, communicate, read books together and do not suppress such a child with your authority.
+                            Then in adulthood you will have a warm, friendly relationship with your Gemini adult.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- The post ends -->
+
+
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>
