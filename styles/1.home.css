@@ -123,11 +123,11 @@ hr {
  }                            /*img for Tarot page*/
 
  .moonimg     {
-    float: left; /*1st img for Moon without a course page*/
+    float: left;          /*1st img for Moon without a course page*/
     margin: 5px 10px;
     padding: 10 20px;
     border-radius: 40px;
- }                            /*img for Tarot page*/
+ }                            
 
   h2 {
       text-align: center;
@@ -206,3 +206,21 @@ table, th, td {
     clear:left;
 }
 /*Footer styling finish*/
+
+#sub-menu{
+    position: absolute;
+    visibility: hidden;
+    margin-top: -25px;
+    background-color: orange;
+}
+
+#sub-menu a:hover {
+    background-color: red;
+}
+
+.active-menu {
+    background-color: blue;
+}
+.active-menu a {
+    color: red;
+}
