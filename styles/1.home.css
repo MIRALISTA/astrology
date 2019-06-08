@@ -40,11 +40,8 @@ ul {
 li { 
     
     display: inline;
-    border-left: 1px solid #e0dfba;;
     padding: 10px;
-    
-
-}
+    }
 
 li:hover {
     background-color: gray;
@@ -58,15 +55,15 @@ a {
 }
 
 
-.home {
-    clear: left; 
+figure {
+    display: inline-block;  padding: 0; margin:0;   /*Styling for the adding icons in for menu*/
 }
 
 .contact {
     border-right: 1px solid #e0dfba;
    }
     
-
+   
 hr {
     overflow: visible;
     padding: 0;
@@ -85,49 +82,29 @@ hr {
 
 
 /*Blog styling starts*/
+.blog {
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+
 .blogimg {
-    object-fit: cover;              /*1st img for Home page*/
-    width:500px;
-    height:500px;
-    border-radius: 50px;
+    object-fit: cover;              /*img for Home page and 2.1, 2.4*/
+    width:450px;
+    height:450px;
+    border-radius: 40px;
     margin: 5px 10px;
     padding: 10 20px;
+    
 }
  
-.oldimg {                        /*img for Home page*/
+.oldimg {                        /*img for kids????? page*/
     width: 500px;
-   height: 500px;
+    height: 500px;
     float: left;  
     margin: 5px 10px;
     padding: 10 20px;
     border-radius: 40px;
    } 
 
-
-
-
-  .firstimg {
-        float: left; /*1st img for Astrology and palmistry page*/
-        width: 30%;
-        margin: 5px 10px;
-        padding: 10 20px;
-        border-radius: 40px;
-    }
-      
- .tarotimg     {
-    float: left; /*1st img for Astrology and palmistry page*/
-    width: 35%;
-    margin: 5px 10px;
-    padding: 10 20px;
-    border-radius: 40px;
- }                            /*img for Tarot page*/
-
- .moonimg     {
-    float: left;          /*1st img for Moon without a course page*/
-    margin: 5px 10px;
-    padding: 10 20px;
-    border-radius: 40px;
- }                            
 
   h2 {
       text-align: center;
@@ -150,7 +127,11 @@ hr {
 /*Astrological signs img styling finish*/
 
 
-/*Moon without a course by months for 2019 styling starts */
+/*Moon without a course styling starts */
+.moonblog {
+display: flex; flex-direction: row; justify-content: center;
+}
+
 .month {
     background-color: rgb(5, 46, 112);
     width: 100px;
@@ -166,7 +147,7 @@ hr {
     background-color: gray;
     color:#e0dfba;
 }
-/*Moon without a course by months for 2019 finishs */
+/*Moon without a course ends */
 
 
 /*Services styling starts*/
@@ -205,22 +186,34 @@ table, th, td {
 .footer {
     clear:left;
 }
-/*Footer styling finish*/
+/*Footer styling finishs*/
 
+
+
+/*Sub-menu styling starts*/
 #sub-menu{
     position: absolute;
     visibility: hidden;
     margin-top: -25px;
-    background-color: orange;
+    background-color: #f2f7e3;
+}
+
+#sub-menu a {
+    color:#000;
 }
 
 #sub-menu a:hover {
-    background-color: red;
+    background-color:#d2d3cd;
+    color:black;
 }
+/*Sub-menu styling finishs*/
 
+/*Active-menu styling starts*/
 .active-menu {
-    background-color: blue;
+    
 }
 .active-menu a {
-    color: red;
+    color:#f2f7e3;
+    border-bottom: 4px solid #f2f7e3;
 }
+/*Active-menu styling finishs*/

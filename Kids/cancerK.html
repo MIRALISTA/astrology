@@ -5,86 +5,96 @@
     <title>Cancer child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li class="contact">Contact us</li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
+        </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/canc.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Cancer child ✡</h2>
-                    <p>
-                        All children without exception need attention, care and love. But in particular, Child Cancer
-                        needs this. children are extremely emotional. They are the most sensitive, the most tender, and
-                        the most unprotected children of all the signs of the zodiac. They can look at this world with
-                        great fear and horror.</p>
-                    <P> Advice to parents: Under no circumstances should the child be
-                            frightened. He/she is already terrified of this life. Such children often have a sad, mysterious
-                            look. Girls cry a lot. Therefore, only the words of approval, support and love should be heard
-                            by such a child. All of your words are deposited in his soul and create his own image about the
-                            things that you told them. Otherwise, you will break such a child, his psyche will be broken for
-                            life.
-                            </P>
-                    <P> You do not need to scream, scold such a child, because if you frown, it's enough that your
-                        child understands that he/she did something wrong. In order for the cancer to be more
-                        independent, give them a task that they must perform themselves (collecting pyramid from cubes,
-                         collecting something from the design, cleaning the toys, etc.) and then, after that, praise
-                            them.</P>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/canc.jpg" />
+        </div>
+        <div>
+            <h2>✡ Cancer child ✡</h2>
+            <p>
+                All children without exception need attention, care and love. But in particular, Child Cancer
+                needs this. children are extremely emotional. They are the most sensitive, the most tender, and
+                the most unprotected children of all the signs of the zodiac. They can look at this world with
+                great fear and horror.</p>
+            <P> Advice to parents: Under no circumstances should the child be
+                frightened. He/she is already terrified of this life. Such children often have a sad, mysterious
+                look. Girls cry a lot. Therefore, only the words of approval, support and love should be heard
+                by such a child. All of your words are deposited in his soul and create his own image about the
+                things that you told them. Otherwise, you will break such a child, his psyche will be broken for
+                life.
+            </P>
+            <P> You do not need to scream, scold such a child, because if you frown, it's enough that your
+                child understands that he/she did something wrong. In order for the cancer to be more
+                independent, give them a task that they must perform themselves (collecting pyramid from cubes,
+                collecting something from the design, cleaning the toys, etc.) and then, after that, praise
+                them.</P>
 
-                    <p>Cancer’s is a fortress for such children, so parents must create this protection. Cancers
-                            should know that next to them there are their friends, loving parents who will always protect.
-                            If a does not want to communicate with a person, never force to do it. Communication with
-                            unloved people has a bad effect on his emotional state, such a child can even get sick
-                            physically. Such a child came into this life with peace, in order to receive warmth and kindness from you.
-                            You must become a friend for your small cancer and should be very supportive parents. As a
-                            result, your child will have a very good and happy future.
-                    </p>
-                </span>
-            </div>
+            <p>Cancer’s is a fortress for such children, so parents must create this protection. Cancers
+                should know that next to them there are their friends, loving parents who will always protect.
+                If a does not want to communicate with a person, never force to do it. Communication with
+                unloved people has a bad effect on his emotional state, such a child can even get sick
+                physically. Such a child came into this life with peace, in order to receive warmth and kindness from
+                you.
+                You must become a friend for your small cancer and should be very supportive parents. As a
+                result, your child will have a very good and happy future.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

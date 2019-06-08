@@ -5,135 +5,136 @@
     <title>Capricorn child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
-        </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
-        </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
-        </li>
-        <li class="services" style="border-right:1px solid #e0dfba;">
-            <a href="4.services.html">Services</a>
-        </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-            <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                <img class="icon" src="../instagram.png" />
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
             </a>
-            <span style="font-size: 15px;">Follow us</span>
-            </figure>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                    <img class="icon" src="../contacts.png" />
-                </a>
-                <span style="font-size: 15px;">Contact us</span>
-            </figure>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
+        </li>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
+        </li>
+        <li>
+            <a href="../4.services.html">Services</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
         </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/capr.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Capricorn child ✡</h2>
-                    <p>
-                        Infants of Capricorn sign do not give parents unnecessary worries. They can lie quietly for hours, even
-                        if the diapers are soaked. Capricorn does not require much attention. If they are feed with
-                        something tasty, it is nice, if they are given with ordinary food, it is also not bad for them.
-                        They are happy with those toys that were bought a few months ago and don't need something new
-                        every day.</p>
-                        <p>️Little Capricorns being the children of Saturn can look at the world rather pessimistically.
-                        They have a suffering, dreamy, mystical soul. ️Advice to parents - talk more with your little Capricorn, ask about their life, what is interesting for
-                        them, what causes emotional discomfort for them. A Capricorn child should know that they will always be
-                        listened to, understood and helped. Otherwise, if there was no good relationship in childhood,
-                        such a child in adolescence may become very closed. If Capricorn decided to share with you some
-                        information, never turn this information against them, even if the information shocked you. Make
-                        a dialogue with Capricorn - they need it more than anyone else. Particular attention should be paid to
-                        youthful years. The fact that parents did not notice psychological problems can lead to
-                        tragedies. As Capricorn child has the quite pessimistic nature it lead that there are a lot of children’s
-                        suicides among Capricorn. Depression is perhaps one of the main and leading features of Capricorn.
-                        Emotionally, children are not stable. Therefore, you need to pay attention to their
-                        psychological background carefully. Try to become a friend for your child, look for an approach
-                        to them. Considering the fact that such a child a pessimist is from their birth, the atmosphere
-                        in the house should be smiling, joyful and harmonious. It will gives strength and optimism to
-                        such a child. ️It is no needed to drive Capricorn child guests, force them to read poetry in public, to play group games,
-                        if they don’t want to do this - this is not the natural environment of the little </p>
-                    <p>The early years are often difficult and full of struggle for them. Capricorn adults are very
-                        serious, practical, agile and stubborn in achieving their goal. They are very disciplined and
-                        require the same from others. Capricorn are professionals in what they do,
-                        but they can be terribly meticulous and boring. They can bring freedom-loved and informal
-                        Aquarius or Sagittarius to a nervous tic, while not paying attention to their feelings, because
-                        the rules exist to follow them! </p>
-                    <P> Capricorns are prudent, economical (these qualities even can turn into greed). Luxurious life is
-                        not for Capricorn. They love such a lifestyle in order to have a stable, may be small, but guaranteed income. They
-                        will not take a risk, because it can undermine their material well-being. Therefore, they can
-                        refuse from good business offers and misses their chance, because they are afraid of losing what
-                        they have. They achieve their goals working hard. They set tasks for themselves that can only be
-                        solved independently by themselves. The more complicated the goal, the more determined and
-                        active they are in order to reach it.</p>
-                    <p>All mental emotions and impulses of Capricornare under strict control. They often have the lack
-                        of sensuality and tenderness. Capricorn has all these qualities, but they don't demonstrate them
-                        for public - they have such a nature. They are often shy and sensitive people inside who can
-                        suddenly fall
-                        into melancholy, succumb to despair, depression. And they compensate for the lack of sensuality
-                        with loyalty and reliability.</p>
-                    <p> Capricorn can be quite slow, but you do not need to make them hurry. Capricorn child is smart, talented with a good
-                        memory. Capricorn child like to read, but they are not capable of quick, decisive action. Therefore, they
-                        just need to help open up. And do not worry that child is slow. They are much faster than other
-                        signs can reach the goal. There are signs that do everything quickly, but superficially and
-                        frivolously. And Capricorn may do not so quickly, but confidently and responsibly.</p>
-                    <p>If Capricorn child for some reason decided that they are not good in a subject at school, it would be
-                        difficult to change their mind. You need to be patient and try to tactfully explain them that
-                        everything is possible, they just need to spend more time for studying. The main thing is not to
-                        laugh at your child if they don't understand something. You need become a friend and helper for
-                        them.</p>
-                        <p>Another feature of Capricorn is “small adults”. When you communicate with a small person, talk to them
-                            as an equal and remember that little Capricorn is an adult inside. And due to that fact, they like to
-                            communicate with adults. Capricorn would rather sit on the bench with their grandparents, rather than
-                            run with the children on the playground.</p>
-                        <p>️You should pay attention to the health of the little Capricorn. Any illness in childhood, starting
-                        from infancy and up to 14-15 years old, can become a serious chronic problem. Capricorn is not very
-                        stable for all sorts of illness up to 15 years old. Teach your child to do any sports. This
-                        will help strengthen their immunity. Show your love, care, attention, patience and you will only be proud of your child in adulthood.
-                        </p>
-                </span>
-            </div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/capr.jpg" />
+        </div>
+        <div>
+            <h2>✡ Capricorn child ✡</h2>
+            <p>
+                Infants of Capricorn sign do not give parents unnecessary worries. They can lie quietly for hours, even
+                if the diapers are soaked. Capricorn does not require much attention. If they are feed with
+                something tasty, it is nice, if they are given with ordinary food, it is also not bad for them.
+                They are happy with those toys that were bought a few months ago and don't need something new
+                every day.</p>
+            <p>️Little Capricorns being the children of Saturn can look at the world rather pessimistically.
+                They have a suffering, dreamy, mystical soul. ️Advice to parents - talk more with your little Capricorn,
+                ask about their life, what is interesting for
+                them, what causes emotional discomfort for them. A Capricorn child should know that they will always be
+                listened to, understood and helped. Otherwise, if there was no good relationship in childhood,
+                such a child in adolescence may become very closed. If Capricorn decided to share with you some
+                information, never turn this information against them, even if the information shocked you. Make
+                a dialogue with Capricorn - they need it more than anyone else. Particular attention should be paid to
+                youthful years. The fact that parents did not notice psychological problems can lead to
+                tragedies. As Capricorn child has the quite pessimistic nature it lead that there are a lot of
+                children’s
+                suicides among Capricorn. Depression is perhaps one of the main and leading features of Capricorn.
+                Emotionally, children are not stable. Therefore, you need to pay attention to their
+                psychological background carefully. Try to become a friend for your child, look for an approach
+                to them. Considering the fact that such a child a pessimist is from their birth, the atmosphere
+                in the house should be smiling, joyful and harmonious. It will gives strength and optimism to
+                such a child. ️It is no needed to drive Capricorn child guests, force them to read poetry in public, to
+                play group games,
+                if they don’t want to do this - this is not the natural environment of the little </p>
+            <p>The early years are often difficult and full of struggle for them. Capricorn adults are very
+                serious, practical, agile and stubborn in achieving their goal. They are very disciplined and
+                require the same from others. Capricorn are professionals in what they do,
+                but they can be terribly meticulous and boring. They can bring freedom-loved and informal
+                Aquarius or Sagittarius to a nervous tic, while not paying attention to their feelings, because
+                the rules exist to follow them! </p>
+            <P> Capricorns are prudent, economical (these qualities even can turn into greed). Luxurious life is
+                not for Capricorn. They love such a lifestyle in order to have a stable, may be small, but guaranteed
+                income. They
+                will not take a risk, because it can undermine their material well-being. Therefore, they can
+                refuse from good business offers and misses their chance, because they are afraid of losing what
+                they have. They achieve their goals working hard. They set tasks for themselves that can only be
+                solved independently by themselves. The more complicated the goal, the more determined and
+                active they are in order to reach it.</p>
+            <p>All mental emotions and impulses of Capricornare under strict control. They often have the lack
+                of sensuality and tenderness. Capricorn has all these qualities, but they don't demonstrate them
+                for public - they have such a nature. They are often shy and sensitive people inside who can
+                suddenly fall
+                into melancholy, succumb to despair, depression. And they compensate for the lack of sensuality
+                with loyalty and reliability.</p>
+            <p> Capricorn can be quite slow, but you do not need to make them hurry. Capricorn child is smart, talented
+                with a good
+                memory. Capricorn child like to read, but they are not capable of quick, decisive action. Therefore,
+                they
+                just need to help open up. And do not worry that child is slow. They are much faster than other
+                signs can reach the goal. There are signs that do everything quickly, but superficially and
+                frivolously. And Capricorn may do not so quickly, but confidently and responsibly.</p>
+            <p>If Capricorn child for some reason decided that they are not good in a subject at school, it would be
+                difficult to change their mind. You need to be patient and try to tactfully explain them that
+                everything is possible, they just need to spend more time for studying. The main thing is not to
+                laugh at your child if they don't understand something. You need become a friend and helper for
+                them.</p>
+            <p>Another feature of Capricorn is “small adults”. When you communicate with a small person, talk to them
+                as an equal and remember that little Capricorn is an adult inside. And due to that fact, they like to
+                communicate with adults. Capricorn would rather sit on the bench with their grandparents, rather than
+                run with the children on the playground.</p>
+            <p>️You should pay attention to the health of the little Capricorn. Any illness in childhood, starting
+                from infancy and up to 14-15 years old, can become a serious chronic problem. Capricorn is not very
+                stable for all sorts of illness up to 15 years old. Teach your child to do any sports. This
+                will help strengthen their immunity. Show your love, care, attention, patience and you will only be
+                proud of your child in adulthood.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

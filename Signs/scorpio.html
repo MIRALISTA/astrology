@@ -5,109 +5,105 @@
     <title>Scorpio</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-                    <a href="https://www.instagram.com/astroclub888/?hl=ru" >
-                        <img class="icon" src="../images/instagram.png"/>
-                    </a> 
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
                     <span style="font-size: 15px;">Follow us </span>
-            </figure>
-    </li>
-    <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
-                        <img class="icon" src="../images/contacts.png"/>
-                    </a> 
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
                     <span style="font-size: 15px;">Contact us</span>
-            </figure>
-    </li>
-</ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Astrological signs</a><br />
-        <a href="2.3horkids.html">Kids Astrology</a><br />
-        <a href="moon.html">Moon without a course</a><br/>
-    </div>
-    <!--Menu finish-->
+                </figure>
+            </a>
+        </li>
+    </ul>
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+                Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
+        </div>
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/scorpio.jpg" />
+        </div>
+        <div>
+            <h2>✡ Scorpio ✡</h2>
+            <p>
+                Scorpio is one of the most discussed horoscope signs, because it is linked with the most contradictory
+                energy and concepts such as rebirth and death, psychology and extreme, magic and sex. Scorpio is
+                like legendary phoenixes that can rise from the ashes and get out of crises even stronger than they
+                had been before. They are characterized by depth, vitality, amazing intuition and ability to make an
+                influence
+                on masses. That is why Scorpio usually are excellent investigators and psychologists and
+                stuntmen. Their negative feature is that they are too suspicious, do not trust anyone, sometimes even
+                themselves.</p>
+            <p>in astrology Scorpios are divided into 3 types: “spiders”, “eagles” and “doves”. This is 3 stages of
+                Scorpio's spiritual development. The spiders is quite aggressive and stings first. The main emotion
+                which feeds on the tarantula is impotent hatred of its victims. Eagle will not attack first, it
+                will protect their loved ones from any enemy who it will be ruthless with.
+                The third, the highest stage of development is the dove (of the world). This is a person who does
+                not have any evil in him and therefore is transparent for any aggression and protected from it.
+                That is why both the most highly spiritual people and the most notorious villains, despots and
+                tyrants can be met among </p>
+            <P>If you want to change, contact Scorpio. Scorpio is the sign that can transform another sign of
+                the zodiac. Scorpio women don't ask permission to invade personal space and start digging. And they can
+                get to the
+                depths very quietly. Scorpio hates to change themselves. They have a great inner desire to
+                withdraw into themselves, to acquire a stable position, so that their inner world is not touched.
+                Scorpio
+                have amazing power combined with enormous vulnerability. They show high intensity in everything.
+                Scorpio do not like their and others ' weaknesses, but can be generous, sympathized. Scorpio are
+                rack, tough, lasts until the end, indomitable. </P>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/scorpio.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Scorpio ✡</h2>
-                    <p>
-                        Scorpio is one of the most discussed horoscope signs, because it is linked with the most contradictory
-                        energy and concepts such as rebirth and death, psychology and extreme, magic and sex. Scorpio is
-                        like legendary phoenixes that can rise from the ashes and get out of crises even stronger than they
-                        had been before. They are characterized by depth, vitality, amazing intuition and ability to make an influence
-                        on masses. That is why Scorpio usually are excellent investigators and psychologists and
-                        stuntmen. Their negative feature is that they are too suspicious, do not trust anyone, sometimes even
-                        themselves.</p>
-                    <p>in astrology Scorpios are divided into 3 types: “spiders”, “eagles” and “doves”. This is 3 stages of
-                        Scorpio's spiritual development. The spiders is quite aggressive and stings first. The main emotion
-                        which feeds on the tarantula is impotent hatred of its victims. Eagle will not attack first, it
-                        will protect their loved ones from any enemy who it will be ruthless with.
-                        The third, the highest stage of development is the dove (of the world). This is a person who does
-                        not have any evil in him and therefore is transparent for any aggression and protected from it.
-                        That is why both the most highly spiritual people and the most notorious villains, despots and
-                        tyrants can be met among </p>
-                    <P>If you want to change, contact Scorpio. Scorpio is the sign that can transform another sign of
-                        the zodiac. Scorpio women don't ask permission to invade personal space and start digging. And they can get to the
-                        depths very quietly. Scorpio hates to change themselves. They have a great inner desire to
-                        withdraw into themselves, to acquire a stable position, so that their inner world is not touched. Scorpio
-                        have amazing power combined with enormous vulnerability. They show high intensity in everything.
-                        Scorpio do not like their and others ' weaknesses, but can be generous, sympathized. Scorpio are
-                        rack, tough, lasts until the end, indomitable. </P>
-
-                    <p>There are many athletes, businessmen, financial directors among Scorpios. Scorpio needs drive,
-                        danger of any kind (even emotional). They struggle all their lives with their passions. And severe
-                        struggle can cause health (nerves) problems.
-                    </p>
-                    <p>The support of Scorpio is thinking, information, the desire to know all the secrets of the world.
-                        Scorpio tend to independence, freedom. They will not remain silent. They will be rebels and often reject
-                        traditions. Suspicion, sarcasm, irony, the ability to see what is hidden under the shell – all
-                        this qualities are also presented in this sign. Developed Scorpio is a born psychologist and
-                        mystic.
-                    </p>
-                </span>
-            </div>
+            <p>There are many athletes, businessmen, financial directors among Scorpios. Scorpio needs drive,
+                danger of any kind (even emotional). They struggle all their lives with their passions. And severe
+                struggle can cause health (nerves) problems.
+            </p>
+            <p>The support of Scorpio is thinking, information, the desire to know all the secrets of the world.
+                Scorpio tend to independence, freedom. They will not remain silent. They will be rebels and often reject
+                traditions. Suspicion, sarcasm, irony, the ability to see what is hidden under the shell – all
+                this qualities are also presented in this sign. Developed Scorpio is a born psychologist and
+                mystic.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

@@ -5,103 +5,97 @@
     <title>Virgo</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-                    <a href="https://www.instagram.com/astroclub888/?hl=ru" >
-                        <img class="icon" src="../images/instagram.png"/>
-                    </a> 
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
                     <span style="font-size: 15px;">Follow us </span>
-            </figure>
-    </li>
-    <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
-                        <img class="icon" src="../images/contacts.png"/>
-                    </a> 
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
                     <span style="font-size: 15px;">Contact us</span>
-            </figure>
-    </li>
-</ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Astrological signs</a><br/>
-        <a href="2.3horkids.html">Kids Astrology</a><br />
-        <a href="moon.html">Moon without a course</a><br/>
-    </div>
-    <!--Menu finish-->
+                </figure>
+            </a>
+        </li>
+    </ul>
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+                Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
+        </div>
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/virgo.jpg" />
+        </div>
+        <div>
+            <h2>✡ Virgo ✡</h2>
+            <p>
+                Virgo is a melancholic person. The sign belongs to the element of earth, and its ruling
+                planet is Mercury. At the first sight, it can be considered that the Virgo’s most important
+                concerns are their home and material problems. In fact, this is not like that. Just Virgo’s
+                observing allows them to note all the imperfections of the surrounding world and correct them as
+                much as they can. Virgo always looks for knowledge. As a true Mercurian, they just need a
+                partner, Virgo can not be alone. Therefore, they can be very easy in a relationship, but
+                periodically taking out the brain.
+            </p>
+            <p>They are very reliable persons. Virgo always thinks and analyzes
+                something. works a lot, sometimes even too much. If they come to visit their friend, they can
+                help washing floors, just because Virgin likes cleanliness. </p>
+            <p>They can decide to make experiments only after careful research, making a good plan, and checking. They
+                are modest but
+                know their worth. They have logical attitude towards reality, that is why they can criticise
+                others reasonably, but without tolerance. They are quite sensitive to criticism, especially if
+                it is not fully substantiated. They can afford some luxury only at when no one sees. </p>
+            <P>In a professional sense, they always feel right in their place. Everywhere they work hard. They
+                have good ability to understand the essence of the matter. They are attentive, diligent,
+                economical. They are perfect leaders and work a lot as well. Virgo does not like to delegate
+                work to others, because they are sure that nobody will be able to do it better than Virgo can,
+                and this can scare people off.</P>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/virgo.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Virgo ✡</h2>
-                    <p>
-                        Virgo is a melancholic person. The sign belongs to the element of earth, and its ruling
-                        planet is Mercury. At the first sight, it can be considered that the Virgo’s most important
-                        concerns are their home and material problems. In fact, this is not like that. Just Virgo’s
-                        observing allows them to note all the imperfections of the surrounding world and correct them as
-                        much as they can. Virgo always looks for knowledge. As a true Mercurian, they just need a
-                        partner, Virgo can not be alone. Therefore, they can be very easy in a relationship, but
-                        periodically taking out the brain.
-                    </p> 
-                       <p>They are very reliable persons. Virgo always thinks and analyzes
-                        something. works a lot, sometimes even too much. If they come to visit their friend, they can
-                        help washing floors, just because Virgin likes cleanliness. </p>                                              
-                    <p>They can decide to make  experiments only after careful research, making a good plan, and checking. They are modest but
-                        know their worth. They have logical attitude towards reality, that is why they can criticise
-                        others reasonably, but without tolerance. They are quite sensitive to criticism, especially if
-                        it is not fully substantiated. They can afford some luxury only at when no one sees. </p>
-                    <P>In a professional sense, they always feel right in their place. Everywhere they work hard. They
-                        have good ability to understand the essence of the matter. They are attentive, diligent,
-                        economical. They are perfect leaders and work a lot as well. Virgo does not like to delegate
-                        work to others, because they are sure that nobody will be able to do it better than Virgo can,
-                        and this can scare people off.</P>
-
-                    <p>Most of them have problems with awareness of their sexuality. The problem is that the Virgo
-                        sees their own shortcomings too clear and very often consider themselves unworthy of the love or
-                        attention of other persons. It is quite common, that Virgo can suffer from an inferiority
-                        complex. Practical advice: Change your mind- praise yourself, love yourself and think less about
-                        annoying trifles.
-                    </p>
-                </span>
-            </div>
+            <p>Most of them have problems with awareness of their sexuality. The problem is that the Virgo
+                sees their own shortcomings too clear and very often consider themselves unworthy of the love or
+                attention of other persons. It is quite common, that Virgo can suffer from an inferiority
+                complex. Practical advice: Change your mind- praise yourself, love yourself and think less about
+                annoying trifles.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

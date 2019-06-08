@@ -5,110 +5,105 @@
     <title>Pisces child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
-        </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
-        </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
-        </li>
-        <li class="services" style="border-right:1px solid #e0dfba;">
-            <a href="4.services.html">Services</a>
-        </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-            <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                <img class="icon" src="../instagram.png" />
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
             </a>
-            <span style="font-size: 15px;">Follow us</span>
-            </figure>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                    <img class="icon" src="../contacts.png" />
-                </a>
-                <span style="font-size: 15px;">Contact us</span>
-            </figure>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
+        </li>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
+        </li>
+        <li>
+            <a href="../4.services.html">Services</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
         </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/pis.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Pisces child ✡</h2>
-                    <p>
-                        The angel-looking baby born under this sign is not really an angel: despite the charming face,
-                        they can achieve their goals not by crying like a Aries child, or stubbornness like a Taurus, but with a
-                        smile and cute tricks.️ Having barely learned to walk, Pisces begins to live in a magical world of fantasy. If a
-                        mother needs to do laundry or cleaning, it is best for her to inflate several balloons, surround
-                        the baby with their favorite soft toys, play music and tell the child that they are in a
-                        circus. Then the child will not interfere with it.</p>            
-                      <p>The most difficult thing in raising Pisces is to teach them to control a certain daily
-                        routine, as they tend to eat and sleep only when they like it. The child can have problems with
-                        timing. So, little Pisces are often late. Therefore, the child must be organized from early childhood.
-                        But don't make your voice higher in order to increase the level of discipline, because then the
-                        Pisces child feels danger from you and can become very closed to themselves.
-                        Another feature of a small Pisces is that they tend to break away from reality and exist in a
-                        world of fictional illusions. From childhood, Pisces must be helped in the selection of clear moral
-                        positions: “what is good and what is bad” should be explained by parents clearly. Then in
-                        adolescence the Pisces will have less chance getting into bad company.</p>                    
-                        
-                    <p>These children are often accused of lying. But Pisces do not lie - they just have such a rich
-                        imagination that they sometimes confuse fiction with reality. These children think their own
-                        way. Therefore, instead of punishing them, it is better to direct their imaginations in a
-                        creative direction - let them compose poems, draw or play roles in drama group plays. Try to
-                        protect their talents and surround them with your love for as long as possible. Try to provide
-                        positive and friendly atmosphere in your home for your Pisces.Teach them to be stable and brave.</p>
-                    <P>  Sometimes Pisces child tend to feel unreasonably upset. They are very vulnerable and can cry
-                        very often. Raising a child, be softer and more tolerant. Always remember how sensitive they
-                        are. Teach your baby to use innate intuition - it will help them in their whole life. Explain
-                        that this is a priceless gift that can be well-being developed with skillful handling.</p>
-                    <p> Pisces children need your permanent attention and support. Try to do something with your baby
-                        and let it become a tradition for you. Surround the child with warmth and love constantly and be
-                        tolerant to their sensitivity. All your good feelings will return to you in abundance.
-                        Create appropriate conditions for development of your child and your Pisces will have
-                        opportunities to become as talented as Elizabeth Taylor, Frideric Chopin, S. Mikhoels, Rudolf
-                        Nureyev, George Washington, John Steinbeck, Handel, Victor Hugo, Enrico Caruso, Michelangelo
-                        Buonarotti, Albert Einstein, N. Rimsky-Korsakov, Auguste Renoir.
-                    </p>
-                </span>
-            </div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/pis.jpg" />
+        </div>
+        <div>
+            <h2>✡ Pisces child ✡</h2>
+            <p>
+                The angel-looking baby born under this sign is not really an angel: despite the charming face,
+                they can achieve their goals not by crying like a Aries child, or stubbornness like a Taurus, but with a
+                smile and cute tricks.️ Having barely learned to walk, Pisces begins to live in a magical world of
+                fantasy. If a
+                mother needs to do laundry or cleaning, it is best for her to inflate several balloons, surround
+                the baby with their favorite soft toys, play music and tell the child that they are in a
+                circus. Then the child will not interfere with it.</p>
+            <p>The most difficult thing in raising Pisces is to teach them to control a certain daily
+                routine, as they tend to eat and sleep only when they like it. The child can have problems with
+                timing. So, little Pisces are often late. Therefore, the child must be organized from early childhood.
+                But don't make your voice higher in order to increase the level of discipline, because then the
+                Pisces child feels danger from you and can become very closed to themselves.
+                Another feature of a small Pisces is that they tend to break away from reality and exist in a
+                world of fictional illusions. From childhood, Pisces must be helped in the selection of clear moral
+                positions: “what is good and what is bad” should be explained by parents clearly. Then in
+                adolescence the Pisces will have less chance getting into bad company.</p>
+
+            <p>These children are often accused of lying. But Pisces do not lie - they just have such a rich
+                imagination that they sometimes confuse fiction with reality. These children think their own
+                way. Therefore, instead of punishing them, it is better to direct their imaginations in a
+                creative direction - let them compose poems, draw or play roles in drama group plays. Try to
+                protect their talents and surround them with your love for as long as possible. Try to provide
+                positive and friendly atmosphere in your home for your Pisces.Teach them to be stable and brave.</p>
+            <P> Sometimes Pisces child tend to feel unreasonably upset. They are very vulnerable and can cry
+                very often. Raising a child, be softer and more tolerant. Always remember how sensitive they
+                are. Teach your baby to use innate intuition - it will help them in their whole life. Explain
+                that this is a priceless gift that can be well-being developed with skillful handling.</p>
+            <p> Pisces children need your permanent attention and support. Try to do something with your baby
+                and let it become a tradition for you. Surround the child with warmth and love constantly and be
+                tolerant to their sensitivity. All your good feelings will return to you in abundance.
+                Create appropriate conditions for development of your child and your Pisces will have
+                opportunities to become as talented as Elizabeth Taylor, Frideric Chopin, S. Mikhoels, Rudolf
+                Nureyev, George Washington, John Steinbeck, Handel, Victor Hugo, Enrico Caruso, Michelangelo
+                Buonarotti, Albert Einstein, N. Rimsky-Korsakov, Auguste Renoir.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

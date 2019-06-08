@@ -5,109 +5,102 @@
     <title>Aries child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
-        </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
-        </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
-        </li>
-        <li class="services" style="border-right:1px solid #e0dfba;">
-            <a href="4.services.html">Services</a>
-        </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-            <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                <img class="icon" src="../images/instagram.png" />
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
             </a>
-            <span style="font-size: 15px;">Follow us </span>
-            </figure>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
-                        <img class="icon" src="../images/contacts.png"/>
-                    </a> 
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
+        </li>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
+        </li>
+        <li>
+            <a href="../4.services.html">Services</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
                     <span style="font-size: 15px;">Contact us</span>
-            </figure>
-       </li>
-   </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Astrological signs</a><br/>
-        <a href="2.3horkids.html">Kids Astrology</a><br/>
-        <a href="moon.html">Moon without a course</a><br/>
+                </figure>
+            </a>
+        </li>
+    </ul>
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/aries.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Aries ✡</h2>
-                    <p>If you have an Aries child you should pay more attention where is he/she is and what he/she does. These children who
-                        don’t have any fear and feelings of self-preservation can do a lot of trouble. They are devoted
-                        to novelty and there is nothing impossible for them. Aries children should not be ignored if the
-                        they break into a cry, because if it happens, they really have good reason for it.
-                        Aries children are the children of fire. So it isn’t for them to sit quietly, examine the
-                        pictures, being engaged in passive games. From childhood they are very active and can’t stop
-                        even for a minute! So it is good to engage them to any sport from an early age. It will help
-                        kids get rid of their excessive energy. If you don’t help them to unload their psyche with
-                        physical exercises, it will reach the point that such a child can get ill. It would be good, if
-                        it was a professional sports section, because there are lot of professional Aries- athletes.
-                    </p>
-                    <p>In spite of their hyperactivity, unique energy, unfortunately, Aries children aren’t
-                            persistent. So these children need to be constantly checked. Try not to berate such a child and
-                            patiently deal with them. Entice them with something new, explaining to them why some things are
-                            necessary. You should teach them to finish what they started. For an Aries child discipline is
-                            very important. Aries children, especially boys can be quite aggressive. But never respond to
-                            and Aries child aggressively. Because it can make them even more aggressive . Aries children are
-                            afraid of not being loved. They understand everything literally. So, if you show aggression,
-                            they will take it as a dislike.</p>
-                    <P>With such a child, you need to talk firmly, persistently, but gently. And you should show by
-                            your own example that aggression isn't the way to achieve anything. Talk more with such a child,
-                            explain to him/her that in order to be a leader it is not necessary to be stronger physically
-                            and get involved in physical fights, it's important to have high intellectual ability too.</P>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/aries.jpg" />
+        </div>
+        <div>
+            <h2>✡ Aries ✡</h2>
+            <p>If you have an Aries child you should pay more attention where is he/she is and what he/she does. These
+                children who
+                don’t have any fear and feelings of self-preservation can do a lot of trouble. They are devoted
+                to novelty and there is nothing impossible for them. Aries children should not be ignored if the
+                they break into a cry, because if it happens, they really have good reason for it.
+                Aries children are the children of fire. So it isn’t for them to sit quietly, examine the
+                pictures, being engaged in passive games. From childhood they are very active and can’t stop
+                even for a minute! So it is good to engage them to any sport from an early age. It will help
+                kids get rid of their excessive energy. If you don’t help them to unload their psyche with
+                physical exercises, it will reach the point that such a child can get ill. It would be good, if
+                it was a professional sports section, because there are lot of professional Aries- athletes.
+            </p>
+            <p>In spite of their hyperactivity, unique energy, unfortunately, Aries children aren’t
+                persistent. So these children need to be constantly checked. Try not to berate such a child and
+                patiently deal with them. Entice them with something new, explaining to them why some things are
+                necessary. You should teach them to finish what they started. For an Aries child discipline is
+                very important. Aries children, especially boys can be quite aggressive. But never respond to
+                and Aries child aggressively. Because it can make them even more aggressive . Aries children are
+                afraid of not being loved. They understand everything literally. So, if you show aggression,
+                they will take it as a dislike.</p>
+            <P>With such a child, you need to talk firmly, persistently, but gently. And you should show by
+                your own example that aggression isn't the way to achieve anything. Talk more with such a child,
+                explain to him/her that in order to be a leader it is not necessary to be stronger physically
+                and get involved in physical fights, it's important to have high intellectual ability too.</P>
 
-                    <p>You can be sure that if you spend quality time with an Aries minor patiently, your work will be
-                        appreciated. In the end you can be proud of your gorgeous, successful Aries adult with whom
-                        you’ll have good communication.
-                    </p>
-                </span>
-            </div>
+            <p>You can be sure that if you spend quality time with an Aries minor patiently, your work will be
+                appreciated. In the end you can be proud of your gorgeous, successful Aries adult with whom
+                you’ll have good communication.
+            </p>
         </div>
     </div>
 
     <!-- The post ends -->
-
-
 
     <!--Foter starts-->
     <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>

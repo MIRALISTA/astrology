@@ -5,99 +5,93 @@
     <title>Taurus</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-                    <a href="https://www.instagram.com/astroclub888/?hl=ru" >
-                        <img class="icon" src="../images/instagram.png"/>
-                    </a> 
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
                     <span style="font-size: 15px;">Follow us </span>
-            </figure>
-    </li>
-    <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
-                        <img class="icon" src="../images/contacts.png"/>
-                    </a> 
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
                     <span style="font-size: 15px;">Contact us</span>
-            </figure>
-    </li>
-</ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="2.3horkids.html">Kids Astrology</a><br />
-        <a href="moon.html">Moon without a course</a><br/>
-    </div>
-    <!--Menu finish-->
+                </figure>
+            </a>
+        </li>
+    </ul>
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+                Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
+        </div>
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/taurus.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Taurus ✡</h2>
-                    <p> Taurus is the second of the 12 signs of the zodiac. Element: Earth. That is the flesh of our
-                        whole world. It is the material basis which organizes the activities of the other three
-                        elements. Ruling Planet: Venus⚢. Taureans always look representative and are usually taller than
-                        others. People of this sign seem to be restrained, calm and slow like they live in their own
-                        world and the rest of world is not interesting for them. They are great lovers of comfort and
-                        expensive things.</p>            
-                    <p>They have really excellent qualities: a sense of taste, love of beauty and aesthetics. Taurus
-                        and money are always nearby. They know how to make money, and money likes Taurus
-                        too.Taureans’ house is their fortress. Taureans equip their home with great love. And the
-                        more money they have, the more luxurious their home will be. Taurus is also a good family man,
-                        loyal and devoted to his family. People of this sign are very hospitable, like to treat guests
-                        with expensive wines.</p>
-                    <p>But there are two Taureans’ extremes. One of them is creative, divine bull that creates gold
-                    around. And the second is the Minotaur (the Minotaur is a mythical scary creature with a
-                    human body and a bull's head). Taurus can be very patient for a long time while being in crisis
-                    situations or in the situation when he doesn't like something. But if you bring the Taureans of
-                    their wrath, they can be so powerful that it is better not to see it! They become furious and
-                    instead of an intelligent, respectable person the Minotaur can appear which easily will swallow
-                    you. If Taureans get sick, the best way to recover is to go to nature. Nature and fresh air heals
-                    them magically.</P>
-                    <p>This is one of the most hardy and stubborn of the signs. The more they suffer and fate, the
-                        stronger physically and mentally they become. Career is moving slowly, but steadily, not seeking
-                        for easy ways. And eventually they will have big success.
-                    </p>
-                </span>
-            </div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/taurus.jpg" />
+        </div>
+        <div>
+            <h2>✡ Taurus ✡</h2>
+            <p> Taurus is the second of the 12 signs of the zodiac. Element: Earth. That is the flesh of our
+                whole world. It is the material basis which organizes the activities of the other three
+                elements. Ruling Planet: Venus⚢. Taureans always look representative and are usually taller than
+                others. People of this sign seem to be restrained, calm and slow like they live in their own
+                world and the rest of world is not interesting for them. They are great lovers of comfort and
+                expensive things.</p>
+            <p>They have really excellent qualities: a sense of taste, love of beauty and aesthetics. Taurus
+                and money are always nearby. They know how to make money, and money likes Taurus
+                too.Taureans’ house is their fortress. Taureans equip their home with great love. And the
+                more money they have, the more luxurious their home will be. Taurus is also a good family man,
+                loyal and devoted to his family. People of this sign are very hospitable, like to treat guests
+                with expensive wines.</p>
+            <p>But there are two Taureans’ extremes. One of them is creative, divine bull that creates gold
+                around. And the second is the Minotaur (the Minotaur is a mythical scary creature with a
+                human body and a bull's head). Taurus can be very patient for a long time while being in crisis
+                situations or in the situation when he doesn't like something. But if you bring the Taureans of
+                their wrath, they can be so powerful that it is better not to see it! They become furious and
+                instead of an intelligent, respectable person the Minotaur can appear which easily will swallow
+                you. If Taureans get sick, the best way to recover is to go to nature. Nature and fresh air heals
+                them magically.</P>
+            <p>This is one of the most hardy and stubborn of the signs. The more they suffer and fate, the
+                stronger physically and mentally they become. Career is moving slowly, but steadily, not seeking
+                for easy ways. And eventually they will have big success.
+            </p>
         </div>
     </div>
     <!-- The post ends -->

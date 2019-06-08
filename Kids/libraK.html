@@ -5,95 +5,110 @@
     <title>Libra child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li class="contact">Contact us</li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
+        </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/libra.jpg" />
-            </div>
-            <div>
-                <span>
-                        <h2>✡ Libra child ✡</h2>
-                        <p>
-                                Libra children are very sensitive. If you raise  Libra children, you should know that you have at home literally a very
-                            fragile "porcelain” that it is easy to destroy. And if parents do not have good attitude to them
-                            in childhood, they will carry the consequences of it for whole their life. And it is not rare
-                            that their spoiled fate is from the deepest childhood. The first thing you need to know: Libra child does not tolerate loneliness. They are always sad and
-                            unhappy when there are no loving parents around and if there is no tactile contact from their
-                            mother. The second thing you need to know: your child is a great aesthete from their birth. So it is
-                            very important for them that everything around is beautiful and harmonious.                                          
-                                                    
-                        </p>
-                        <p> Also, the  Libra child is very sensitive to the relationship of parents. If parents arguing with each
-                                other, show aggression in front of their infant, the Libra child feels this as a personal tragedy. The
-                                fact, a nervous system of  Libra child is very sensitive and weak. That is why it is very easy to break
-                                it.  You need to understand that any aggression is very painful for Libra. So, if child does something
-                                bad, just a simple explanation is enough. Tenderness and affection in this situation is much
-                                more effective for such a child than punishment. Believe me, this child is wise from their birth.
-                                Libra children understand much more than you think about them. Parents should know that shouting and
-                                aggression as a method of education will spoil your relationship with the little child for their
-                                whole life.</p>
-                        <p>Libra is usually very talented. It can be musical, artistic talent or talent in any other form of
-                                art. It is important to notice it in time and start developing it. Do not forget to praise these
-                                children. Compliments for Libra is the best way to win, they need it so much.
-                                These children are very capable in studying at school. However, quite often it is difficult for
-                                them to do homework alone. If the parents do not control them, Libra child can stop doing it. Therefore,
-                                it is good to pay more attention to them. </p>
-                        <p> Mood changes, which adult child is famous for, are also typical for children.  Libra children can have fun in
-                                front of you, but within a second they can start crying. They can not explain themselves what
-                                happened to them. You should understand that this is a feature of this sign. Digestive disorders, migraines and lower back pain
-                                are a consequence of nervous overload such children. So you should pay attention to it.
-                                Advice: talk more with  Libra children, ask about the things that upsets them and about their life. All the
-                                problems and the doubts that spoil their mood should be resolved. The atmosphere of kindness in
-                                their family is very important for Libra child. The most adequate and successful Libras grow up only in
-                                such atmosphere. And remember parents, when you fight and insult each other, it ruins your child's life. It's
-                                not worth it!
-                        </p>                  
-                </span>
-            </div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/libra.jpg" />
+        </div>
+        <div>
+            <h2>✡ Libra child ✡</h2>
+            <p>
+                Libra children are very sensitive. If you raise Libra children, you should know that you have at home
+                literally a very
+                fragile "porcelain” that it is easy to destroy. And if parents do not have good attitude to them
+                in childhood, they will carry the consequences of it for whole their life. And it is not rare
+                that their spoiled fate is from the deepest childhood. The first thing you need to know: Libra child
+                does not tolerate loneliness. They are always sad and
+                unhappy when there are no loving parents around and if there is no tactile contact from their
+                mother. The second thing you need to know: your child is a great aesthete from their birth. So it is
+                very important for them that everything around is beautiful and harmonious.
+
+            </p>
+            <p> Also, the Libra child is very sensitive to the relationship of parents. If parents arguing with each
+                other, show aggression in front of their infant, the Libra child feels this as a personal tragedy. The
+                fact, a nervous system of Libra child is very sensitive and weak. That is why it is very easy to break
+                it. You need to understand that any aggression is very painful for Libra. So, if child does something
+                bad, just a simple explanation is enough. Tenderness and affection in this situation is much
+                more effective for such a child than punishment. Believe me, this child is wise from their birth.
+                Libra children understand much more than you think about them. Parents should know that shouting and
+                aggression as a method of education will spoil your relationship with the little child for their
+                whole life.</p>
+            <p>Libra is usually very talented. It can be musical, artistic talent or talent in any other form of
+                art. It is important to notice it in time and start developing it. Do not forget to praise these
+                children. Compliments for Libra is the best way to win, they need it so much.
+                These children are very capable in studying at school. However, quite often it is difficult for
+                them to do homework alone. If the parents do not control them, Libra child can stop doing it. Therefore,
+                it is good to pay more attention to them. </p>
+            <p> Mood changes, which adult child is famous for, are also typical for children. Libra children can have
+                fun in
+                front of you, but within a second they can start crying. They can not explain themselves what
+                happened to them. You should understand that this is a feature of this sign. Digestive disorders,
+                migraines and lower back pain
+                are a consequence of nervous overload such children. So you should pay attention to it.
+                Advice: talk more with Libra children, ask about the things that upsets them and about their life. All
+                the
+                problems and the doubts that spoil their mood should be resolved. The atmosphere of kindness in
+                their family is very important for Libra child. The most adequate and successful Libras grow up only in
+                such atmosphere. And remember parents, when you fight and insult each other, it ruins your child's life.
+                It's
+                not worth it!
+            </p>
         </div>
     </div>
     <!-- The post ends -->

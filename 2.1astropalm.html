@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astrology and Palmistry</title>
+    <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="astro.js"></script>
+</head>
+
+
+<body>
+    <div id="title">Astroclub</div>
+      <!--Menu starts-->
+       <ul class="menu">
+            <li >
+                <a href="1.Palmistryhome.html">
+                    <figure>
+                        <img class="icon" src="images/home.png" />
+                        <span>Astro blog</span>
+                    </figure>
+                </a>
+            </li>
+    
+            <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+            <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+                <a>Astrology and Palmistry</a>
+            </li>
+            <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+            <li>
+                <a href="3.tarot.html">Tarot</a>
+            </li>
+            <li>
+                <a href="4.services.html">Services</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                    <figure>
+                        <img class="icon" src="images/instagram.png" />
+                        <span style="font-size: 15px;">Follow us </span>
+                    </figure>
+                </a>
+    
+            </li>
+            <li>
+                <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                    <figure>
+                        <img class="icon" src="images/contacts.png" />
+                        <span style="font-size: 15px;">Contact us</span>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+        <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+        <div id="sub-menu">
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.1astropalm.html">Combination Palmistry and
+                Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.2horsigns.html">Astrological signs</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.3horkids.html">Kids Astrology</a><br />
+            <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.4moon.html">Moon without a course</a><br />
+        </div>
+        <!--Menu ends-->
+    <hr>
+
+    <!-- The 1st post starts-->
+    <div class="blog">
+        <img class="blogimg" src="images/clock.jpg">
+        <span>
+            <h2>✡ Astrology ✡</h2>
+            From a mathematical point of view, astrology is the exact science which means that the actual success of
+            reading a horoscope card completely depends on the correct calculation. For more accurate horoscope you need
+            to know your place, exact date and time of birth, preferably the exact minute (that can be quite difficult
+            sometimes for any reasons). Palmistry in this regard, has a number of advantages. A palmist doesn`t need to
+            know the exact time of birth, because a palm built by nature through the lines and signs on the hand in this
+            case is like a Natal Chart for astrology . The condition of hills, lines on your hands shows the character,
+            opportunities and events in a person's life.
+            For more reliable forecast we combine palmistry and astrology, which gives us the opportunity to consider in
+            more detail of the fate of a man.
+    </div>
+    <!-- The 1st post ends-->
+
+    <!--Foter starts-->
+    <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
+    <!--Foter finishs-->
+</body>
+
+</html>

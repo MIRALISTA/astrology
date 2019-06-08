@@ -5,62 +5,61 @@
     <title>Moon without a course in July 2019 year (for Moscow time)</title>
     <link rel="stylesheet" type="text/css" href="styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="astro.js"></script>
 </head>
+
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
-    <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+ <!--Menu starts-->
+ <ul class="menu">
+        <li>
+            <a href="1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
             <a href="3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-                <a href="4.services.html">Services</a>
-            </li>
-            <li style=" border: none;">
-                <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-                        <a href="https://www.instagram.com/astroclub888/?hl=ru" >
-                            <img class="icon" src="images/instagram.png"/>
-                        </a> 
-                        <span style="font-size: 15px;">Follow us </span>
-                </figure>
+        <li>
+            <a href="4.services.html">Services</a>
         </li>
-        <li style=" border: none;">
-                <figure style="display: inline-block;  padding: 0; margin:0;">
-                        <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub" >
-                            <img class="icon" src="images/contacts.png"/>
-                        </a> 
-                        <span style="font-size: 15px;">Contact us</span>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
                 </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
         </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Astrological signs</a><br />
-        <a href="2.3horkids.html">Kids Astrology</a><br/>
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The Moon forecast June 2019 starts -->
     <div style= "text-align: center">
@@ -117,13 +116,10 @@
                 </p>                       
 </div>
 
-<!-- The Moon forecast June 2019 - -->
+<!-- The Moon forecast June 2019 ends-->
 
-    <hr />
-    <!--break-->
-
+    <hr>
     
-
     <!--Foter starts-->
     <div class="footer">Copyrights (c) 2019 Tatiana Mironova</div>
     <!--Foter finishs-->

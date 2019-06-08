@@ -5,119 +5,130 @@
     <title>Leo child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
+            </a>
         </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
         </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
         </li>
-        <li class="services">
-            <a href="4.services.html">Services</a>
+        <li>
+            <a href="../4.services.html">Services</a>
         </li>
-        <li class="contact">Contact us</li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
+        </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/leo.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Leo child ✡</h2>
-                    <p>
-                        The Leo child has the feature of a leader from an early age. They are little princes/princesses
-                        who loudly declare to the world about their individuality. They require a special attitude.
-                        Advice for parents: First, remember that the little Leo have very ambitious goals and it is
-                        very  painful for them when something is going wrong. Like all signs of fire, leo is not patient. They
-                        want to get everything at once. If something does not work, it can lead to storm of indignation.
-                        Therefore, when you raise a Leo child, you should tactfully and slowly, but firmly enough
-                        explain that life is not only for the desires of Leo, but there are other people who also have their own
-                        desires. It is not good idea to indulge Leos, because in the future they can turn into a little
-                        tyrant. Leo children need to be explained that all the gifts of fate should not just be given to
-                        them because they are so good and worthy of all the gifts, but because they must work hard,
-                        prove themselves in life and only then receive a reward. ✔Another feature of Leo child is that
-                        they are very active. Never forbid them to be active because if the energy will not go out and find a
-                        worthy activity, your child will go hysterics. Leo should be actively loaded physically since
-                        childhood. So, sport is very useful.
-                        <p>Your Leo with great discipline. Like all fire signs, such a child can start multiple
-                            things at the same time and not finish them until the end. Explain to them that all things
-                            need  to be brought to an end, encourage them when they finish some tasks.</p>
-                        <p>Another advice to parents- your Leo child is born with a sense of their own greatness. Such a
-                            child has a nature which is very sensitive to criticism. These children are very sensitive.
-                            So, even the slightest criticism can make them down. The worst thing you can do is to scold Leo
-                            child in front of his friends. This situation will have a bad impact on their mental state. If you
-                            need to have a serious conversation with the little lion, do it individually, alone.#leo
-                            Parents should understand that it is very easy to break little Leo by just constantly
-                            criticising them in an inappropriate manner Complexes from their childhood will harmfully
-                            influence all Leo life and it leads to a situation that they can not find themselves in
-                            adult  life. </p>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/leo.jpg" />
+        </div>
+        <div>
+            <h2>✡ Leo child ✡</h2>
+            <p>
+                The Leo child has the feature of a leader from an early age. They are little princes/princesses
+                who loudly declare to the world about their individuality. They require a special attitude.
+                Advice for parents: First, remember that the little Leo have very ambitious goals and it is
+                very painful for them when something is going wrong. Like all signs of fire, leo is not patient. They
+                want to get everything at once. If something does not work, it can lead to storm of indignation.
+                Therefore, when you raise a Leo child, you should tactfully and slowly, but firmly enough
+                explain that life is not only for the desires of Leo, but there are other people who also have their own
+                desires. It is not good idea to indulge Leos, because in the future they can turn into a little
+                tyrant. Leo children need to be explained that all the gifts of fate should not just be given to
+                them because they are so good and worthy of all the gifts, but because they must work hard,
+                prove themselves in life and only then receive a reward. ✔Another feature of Leo child is that
+                they are very active. Never forbid them to be active because if the energy will not go out and find a
+                worthy activity, your child will go hysterics. Leo should be actively loaded physically since
+                childhood. So, sport is very useful.
+                <p>Your Leo with great discipline. Like all fire signs, such a child can start multiple
+                    things at the same time and not finish them until the end. Explain to them that all things
+                    need to be brought to an end, encourage them when they finish some tasks.</p>
+                <p>Another advice to parents- your Leo child is born with a sense of their own greatness. Such a
+                    child has a nature which is very sensitive to criticism. These children are very sensitive.
+                    So, even the slightest criticism can make them down. The worst thing you can do is to scold Leo
+                    child in front of his friends. This situation will have a bad impact on their mental state. If you
+                    need to have a serious conversation with the little lion, do it individually, alone.#leo
+                    Parents should understand that it is very easy to break little Leo by just constantly
+                    criticising them in an inappropriate manner Complexes from their childhood will harmfully
+                    influence all Leo life and it leads to a situation that they can not find themselves in
+                    adult life. </p>
 
-                        <p>
-                            Leo is often difficult to integrate into a new team. All children in a team eventually
-                            occupy their place, but a small Leo child can only take the leading place in the team, but this
-                            place can already be occupied... As a result, having made several attempts to take this place, but
-                            not having such an opportunity, leo child can be withdrawn into himself. leo absolutely does not
-                            tolerate loneliness and if a child does not join the team, it will be a great psychological
-                            trauma. So if you see your child sitting somewhere in the sandbox alone with a sad look, pay
-                            attention to it. Help Leo child to join the team. You can periodically invite all the peers
-                            of the lion to visit your home, where Leo child can feel like a host, receiving guests. For
-                            him/her it will be very useful. So it will be easier to build relationships with other children and
-                            at the same time to reckon with their opinion. Explain to the children that guests should be
-                            comfortable in Leo house. Teach your children how to treat their friends, show generosity -
-                            the qualities that are characteristics of their nature.
-                        </p>
+                <p>
+                    Leo is often difficult to integrate into a new team. All children in a team eventually
+                    occupy their place, but a small Leo child can only take the leading place in the team, but this
+                    place can already be occupied... As a result, having made several attempts to take this place, but
+                    not having such an opportunity, leo child can be withdrawn into himself. leo absolutely does not
+                    tolerate loneliness and if a child does not join the team, it will be a great psychological
+                    trauma. So if you see your child sitting somewhere in the sandbox alone with a sad look, pay
+                    attention to it. Help Leo child to join the team. You can periodically invite all the peers
+                    of the lion to visit your home, where Leo child can feel like a host, receiving guests. For
+                    him/her it will be very useful. So it will be easier to build relationships with other children and
+                    at the same time to reckon with their opinion. Explain to the children that guests should be
+                    comfortable in Leo house. Teach your children how to treat their friends, show generosity -
+                    the qualities that are characteristics of their nature.
+                </p>
 
-                        <p>Despite their autonomy of personality, Leo can not imagine themselves without friends or
-                            communication. Leo suffers very much when they are not noticed, because the attention to them is very important. They need
-                            the adoration coming from their surroundings, that is why they usually have a lot of friends. It
-                            is important for Leo that you mark something unusual in them, which other people do not have!
-                            Moreover, they will constantly talk you about it and show it. The only things that will
-                            forever push the Leo away from you are pettiness and hypocrisy. Leo will never understand how it is possible to do something behind his back. Therefore they keeps
-                            away from such people. </p>
-                        <p>It is also good to have a pet, because communicating with animals, Leo can learn to take care
-                            of their neighbors. The more time they spend with an animal, the wider their soul becomes.A
-                            Leo child is naturally very generous, fair, and always protects the weak. Develop these qualities in
-                            them.</p>
-                        <p> Leos can become very successful, but you need to work on it. Pay attention to what children
-                            are interested in, ask them about their studies, check homework, discipline them and, of
-                            course,
-                            LOVE!
-                        </p>
-                </span>
-            </div>
+                <p>Despite their autonomy of personality, Leo can not imagine themselves without friends or
+                    communication. Leo suffers very much when they are not noticed, because the attention to them is
+                    very important. They need
+                    the adoration coming from their surroundings, that is why they usually have a lot of friends. It
+                    is important for Leo that you mark something unusual in them, which other people do not have!
+                    Moreover, they will constantly talk you about it and show it. The only things that will
+                    forever push the Leo away from you are pettiness and hypocrisy. Leo will never understand how it is
+                    possible to do something behind his back. Therefore they keeps
+                    away from such people. </p>
+                <p>It is also good to have a pet, because communicating with animals, Leo can learn to take care
+                    of their neighbors. The more time they spend with an animal, the wider their soul becomes.A
+                    Leo child is naturally very generous, fair, and always protects the weak. Develop these qualities in
+                    them.</p>
+                <p> Leos can become very successful, but you need to work on it. Pay attention to what children
+                    are interested in, ask them about their studies, check homework, discipline them and, of
+                    course,
+                    LOVE!
+                </p>
         </div>
     </div>
     <!-- The post ends -->

@@ -5,103 +5,98 @@
     <title>Aquarius child</title>
     <link rel="stylesheet" type="text/css" href="../styles/1.home.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script>
-        function showMenu(e) {
-            var bounds = e.getBoundingClientRect();
-            document.getElementById('sub-menu').style.left = bounds.left + "px";   //JAVA SCRIPT
-            document.getElementById('sub-menu').style.visibility = "visible";
-        }
-        function hideMenu(e) {
-            document.getElementById('sub-menu').style.visibility = "hidden";
-        }
-    </script>
+    <script src="../astro.js"></script>
 </head>
 
 <body>
     <div id="title">Astroclub</div>
-    <!--Menu start-->
+    <!--Menu starts-->
     <ul class="menu">
-        <li class="blog">
-            <a href="1.Palmistryhome.html">Astro blog (Home)</a>
-        </li>
-        <!--   mouse over starts (open and hide the sub menu) -->
-        <li class="astro" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
-            <!--JAVA SCRIPT-->
-            <a href="astropalm.html">Astrology and Palmistry</a>
-        </li>
-        <li class="tarot">
-            <a href="3.tarot.html">Tarot</a>
-        </li>
-        <li class="services" style="border-right:1px solid #e0dfba;">
-            <a href="4.services.html">Services</a>
-        </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding-left: 30; margin-left:10;"></figure>
-            <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                <img class="icon" src="../instagram.png" />
+        <li>
+            <a href="../1.Palmistryhome.html">
+                <figure>
+                    <img class="icon" src="../images/home.png" />
+                    <span>Astro blog</span>
+                </figure>
             </a>
-            <span style="font-size: 15px;">Follow us</span>
-            </figure>
         </li>
-        <li style=" border: none;">
-            <figure style="display: inline-block;  padding: 0; margin:0;">
-                <a href="https://www.instagram.com/astroclub888/?hl=ru">
-                    <img class="icon" src="../contacts.png" />
-                </a>
-                <span style="font-size: 15px;">Contact us</span>
-            </figure>
+
+        <!--   mouse over starts (open and hide the sub menu -JAVA SCRIPT) -->
+        <li class="astro active-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+            <a>Astrology and Palmistry</a>
+        </li>
+        <!--   mouse over ends (open and hide the sub menu -JAVA SCRIPT) -->
+        <li>
+            <a href="../3.tarot.html">Tarot</a>
+        </li>
+        <li>
+            <a href="../4.services.html">Services</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/astroclub888/?hl=ru">
+                <figure>
+                    <img class="icon" src="../images/instagram.png" />
+                    <span style="font-size: 15px;">Follow us </span>
+                </figure>
+            </a>
+
+        </li>
+        <li>
+            <a href="mailto:astroclub888@gmail.com?subject=Question for Astroclub">
+                <figure>
+                    <img class="icon" src="../images/contacts.png" />
+                    <span style="font-size: 15px;">Contact us</span>
+                </figure>
+            </a>
         </li>
     </ul>
-    <!-- This is the sub menu. It will be dynamic -->
-    <div style="position: absolute; visibility: hidden;" id="sub-menu">
-        <!--JAVA SCRIPT-->
-        <a href="http://google.com">Combination Palmistry and Astrology</a><br />
-        <a href="2.2horsigns.html">Horoscope signs</a><br />
-        <a href="http://mail.ru">Kids horoscope</a><br />
-        <a href="moon.html">Moon without a course</a><br />
+    <!-- This is the dynamic sub menu (JAVA SCRIPT)-->
+    <div id="sub-menu">
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.1astropalm.html">Combination Palmistry and
+            Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.2horsigns.html">Astrological signs</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.3horkids.html">Kids Astrology</a><br />
+        <a onmouseover="cancelHide()" onmouseout="hideMenu()" href="../2.4moon.html">Moon without a course</a><br />
     </div>
-    <!--Menu finish-->
+    <!--Menu ends-->
     <hr>
     <!-- The post starts -->
-    <div>
 
-        <div style="display: flex; flex-direction: row; justify-content: space-between;">
-            <div>
-                <img class="oldimg" src="../images/Kids/aqua.jpg" />
-            </div>
-            <div>
-                <span>
-                    <h2>✡ Aquarius child✡</h2>
-                    <p> Aquarius child is very stubborn. They have a quick mind, an extraordinary view of the world and
-                        inherent leadership qualities. Their personality is very controversial. Little Aquarius like to shock
-                        the public. Their psyche is not stable. So Aquarius can have the mood swings for whole their life.
-                        Aquarius seem to many people very strange and unlogical. The first people who come across this
-                        “irrationality” are their parents. It seems to parents of such a child that their Aquarius is always in
-                        opposition and the child does not want to compromise. The reason for this situation is the fact
-                        that in most families the model of relationship between parents and children is built like this:
-                        “You should do as I told you!” or “I’m an adult and, therefore, I’m I know better what's right!
-                        This model of education doesn't fit little Aquarius. The more parents will push their child and require
-                        obedience without explanation why this cannot be done, the more little Aquarius will see the enemy in
-                        the parents and do the opposite. And then it can result in a huge problem in adolescence.                                   
-                        The Aquarius child is very capable at school, but they are good at that subjects only in which they
-                        are interested in.️</p>
-                    <p> The feature of Aquarius children is that they not always can understand what is “bad” and what is
-                        “good”. Therefore, parents should explain why some actions can not be done and try to create a
-                        friendly atmosphere at home. Little Aquarius  needs people with whom they can share their feelings.
-                        Therefore, the task for parents to become such people for their child. It will help the little
-                        Aquarius to build the correct guidelines at the stage of growing up and not become an impulsive
-                        and stubborn teenager who does not make contact at all. In adolescence, this child can not be
-                        changed. </p>
-                    <P> Like all horoscope signs of air, Aquarius has an unstable nervous system. Advice for parents - do
-                        not push, do not humiliate, do not criticize your child and do not undervalue their ideas, even
-                        if they seem ridiculous to you - there are a lot of innovators and inventors among Aquarius. Another feature of this sign is that small Aquarius need a private space. They need to be alone to
-                        think and spend time for their hobby. Be sure to give them that opportunity.</p>
-                    <p> The weak part of body of the small Aquarius are vessels, heart, legs (especially the ankles and lower
-                        legs). Fresh air, diet, sports are required to improve health. And, despite the fact that there
-                        are not many athletes among Aquarius, it is definitely good idea to teach a child any sports.
-                        And remember, when parents raise children, they also raise themselves.</p>
-                </span>
-            </div>
+    <div class="blog">
+        <div>
+            <img class="blogimg" src="../images/Kids/aqua.jpg" />
+        </div>
+        <div>
+            <h2>✡ Aquarius child✡</h2>
+            <p> Aquarius child is very stubborn. They have a quick mind, an extraordinary view of the world and
+                inherent leadership qualities. Their personality is very controversial. Little Aquarius like to shock
+                the public. Their psyche is not stable. So Aquarius can have the mood swings for whole their life.
+                Aquarius seem to many people very strange and unlogical. The first people who come across this
+                “irrationality” are their parents. It seems to parents of such a child that their Aquarius is always in
+                opposition and the child does not want to compromise. The reason for this situation is the fact
+                that in most families the model of relationship between parents and children is built like this:
+                “You should do as I told you!” or “I’m an adult and, therefore, I’m I know better what's right!
+                This model of education doesn't fit little Aquarius. The more parents will push their child and require
+                obedience without explanation why this cannot be done, the more little Aquarius will see the enemy in
+                the parents and do the opposite. And then it can result in a huge problem in adolescence.
+                The Aquarius child is very capable at school, but they are good at that subjects only in which they
+                are interested in.️</p>
+            <p> The feature of Aquarius children is that they not always can understand what is “bad” and what is
+                “good”. Therefore, parents should explain why some actions can not be done and try to create a
+                friendly atmosphere at home. Little Aquarius needs people with whom they can share their feelings.
+                Therefore, the task for parents to become such people for their child. It will help the little
+                Aquarius to build the correct guidelines at the stage of growing up and not become an impulsive
+                and stubborn teenager who does not make contact at all. In adolescence, this child can not be
+                changed. </p>
+            <P> Like all horoscope signs of air, Aquarius has an unstable nervous system. Advice for parents - do
+                not push, do not humiliate, do not criticize your child and do not undervalue their ideas, even
+                if they seem ridiculous to you - there are a lot of innovators and inventors among Aquarius. Another
+                feature of this sign is that small Aquarius need a private space. They need to be alone to
+                think and spend time for their hobby. Be sure to give them that opportunity.</p>
+            <p> The weak part of body of the small Aquarius are vessels, heart, legs (especially the ankles and lower
+                legs). Fresh air, diet, sports are required to improve health. And, despite the fact that there
+                are not many athletes among Aquarius, it is definitely good idea to teach a child any sports.
+                And remember, when parents raise children, they also raise themselves.</p>
         </div>
     </div>
     <!-- The post ends -->
