@@ -207,9 +207,6 @@ table, th, td {
 /*Sub-menu styling  ends*/
 
 /*Active-menu styling starts*/
-.active-menu {
-    
-}
 .active-menu a {
     color:#f2f7e3;
     border-bottom: 4px solid #f2f7e3;
