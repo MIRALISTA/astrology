@@ -82,6 +82,14 @@ hr {
 
 
 /*Blog styling starts*/
+.date {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;   
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: right;
+    margin-right: 22px
+}
 .blog {
     display: flex; flex-direction: row; justify-content: space-between;
 }
@@ -96,22 +104,13 @@ hr {
     
 }
  
-.oldimg {                        /*img for kids????? page*/
-    width: 500px;
-    height: 500px;
-    float: left;  
-    margin: 5px 10px;
-    padding: 10 20px;
-    border-radius: 40px;
-   } 
-
 
   h2 {
       text-align: center;
   }  
 
   
-/*Blog styling finish*/
+/*Blog styling ends*/
 
 /*Astrological signs img styling starts*/
 
@@ -179,15 +178,14 @@ table, th, td {
     height:30px;
     border: none;
 }
- /*Icon styling finishs*/
+ /*Icon styling ends*/
 
 
 /*Footer styling starts*/
 .footer {
     clear:left;
 }
-/*Footer styling finishs*/
-
+/*Footer styling  ends*/
 
 
 /*Sub-menu styling starts*/
@@ -206,7 +204,7 @@ table, th, td {
     background-color:#d2d3cd;
     color:black;
 }
-/*Sub-menu styling finishs*/
+/*Sub-menu styling  ends*/
 
 /*Active-menu styling starts*/
 .active-menu {
@@ -216,4 +214,4 @@ table, th, td {
     color:#f2f7e3;
     border-bottom: 4px solid #f2f7e3;
 }
-/*Active-menu styling finishs*/
+/*Active-menu styling  ends*/
